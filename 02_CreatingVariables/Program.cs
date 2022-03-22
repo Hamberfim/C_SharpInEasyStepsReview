@@ -15,11 +15,14 @@ namespace _02_CreatingVariables
             int number = 100;
             Console.WriteLine("int data type: " + number);
 
-            float bodyTemp = 98.6f;
-            Console.WriteLine("floating point data type: " + bodyTemp);
+            float bodyTemp = 98.6f;  // 7 digit precision
+            Console.WriteLine("floating point data type: " + bodyTemp);  
 
-            double pi = 3.14159;
-            Console.WriteLine("double data type: " + pi);
+            double pi = 3.14159;  // 15 digit precision
+            Console.WriteLine("double data type: " + pi);  
+
+            decimal sumDollarAmount = 1597.55m;  // 28 digit precision
+            Console.WriteLine("decimal data type: $" + sumDollarAmount);
 
         }
     }
