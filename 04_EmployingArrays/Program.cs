@@ -25,7 +25,7 @@ namespace _04_EmployingArrays
             }
 
             Console.WriteLine("\nBoat Types:");
-            
+
             string[] boatTypes = { "row", "sail", "motorized" };
             Console.WriteLine("My favorite boat type is a " + boatTypes[2] + " boat.");
 
