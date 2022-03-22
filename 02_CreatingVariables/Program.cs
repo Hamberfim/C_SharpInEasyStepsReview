@@ -24,6 +24,12 @@ namespace _02_CreatingVariables
             decimal sumDollarAmount = 1597.55m;  // 28 digit precision
             Console.WriteLine("decimal data type: $" + sumDollarAmount);
 
+            bool flagAsTrue = true;
+            Console.WriteLine("boolean data type: " + flagAsTrue);
+
+            string textPhrase = "C# is a powerful language!";
+            Console.WriteLine("string data type: " + textPhrase);
+
         }
     }
 }
