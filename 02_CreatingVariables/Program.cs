@@ -18,7 +18,8 @@ namespace _02_CreatingVariables
             float bodyTemp = 98.6f;
             Console.WriteLine("floating point data type: " + bodyTemp);
 
-
+            double pi = 3.14159;
+            Console.WriteLine("double data type: " + pi);
 
         }
     }
