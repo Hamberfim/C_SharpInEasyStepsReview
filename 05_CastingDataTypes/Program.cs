@@ -17,7 +17,15 @@ namespace _05_CastingDataTypes
             int intNub2 = 2;
             int sum1 = intNub1 / intNub2;
             double sum2 = (double)intNub1 / intNub2;
-            Console.WriteLine($"{intNub1}/{intNub2} = {sum2}  otherwise it would tructed to {sum1}");
+            double sum3 = (double)(7 / 2);
+            Console.WriteLine($"{intNub1}/{intNub2} = {sum2} otherwise it would tructed to {sum1}");
+
+            Console.WriteLine("Be causious with order of opperations.");
+            Console.WriteLine("Because double sum2 = (double)(intNub1 / intNub2) will result in a truction of the decimal position too");
+            Console.WriteLine($"double sum3 = (double)(7 / 2) = {sum3}");
+
+
+
         }
     }
 }
