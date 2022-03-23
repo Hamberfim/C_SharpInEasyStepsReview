@@ -29,8 +29,11 @@ namespace _05_CastingDataTypes
             Console.WriteLine("More examples:");
             double num1 = 10.5;
             int num2 = 2;
-            double numSum = num1 + num2;
+            double numSum = num1 + num2;  // implicit cast
             Console.WriteLine($"Implicit: {num1} + {num2} = {numSum}");
+
+            double numSum2 = (double)11 / num2;  // Explicit cast
+            Console.WriteLine($"Explicit: 11 / {num2} = {numSum2}");
 
         }
     }
