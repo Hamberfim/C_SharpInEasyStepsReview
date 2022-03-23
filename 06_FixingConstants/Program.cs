@@ -18,6 +18,9 @@ namespace _06_FixingConstants
 
             Console.WriteLine($"First Weekend day of the week is {Days.Saturday}");
             Console.WriteLine($"Saturdays index number in the enum list is {(int)Days.Saturday}");
+
+            Console.WriteLine($"First work day of the week is {Days.Monday}");
+            Console.WriteLine($"Mondays index number in the enum list is {(int)Days.Monday}");
         }
     }
 }
