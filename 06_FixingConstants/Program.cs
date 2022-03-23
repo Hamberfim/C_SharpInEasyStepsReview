@@ -16,8 +16,7 @@ namespace _06_FixingConstants
             var daysType = typeof(Days);
             Console.WriteLine($"Circumference: {piValue * 3}");
 
-
-            Console.WriteLine("Hello World!");
+            Console.WriteLine($"First Weekend day of the week is {Days.Saturday}");
         }
     }
 }
