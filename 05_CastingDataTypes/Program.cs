@@ -12,6 +12,12 @@ namespace _05_CastingDataTypes
             double sum = onePointTwo + seven;
             Console.WriteLine($"{onePointTwo} + {seven} = {sum} is an example of implicit casting.");
 
+            Console.WriteLine("To store an accurate floating point number without it being tructed requires casting int to double.");
+            int intNub1 = 7;
+            int intNub2 = 2;
+            int sum1 = intNub1 / intNub2;
+            double sum2 = (double)intNub1 / intNub2;
+            Console.WriteLine($"{intNub1}/{intNub2} = {sum2}  otherwise it would tructed to {sum1}");
         }
     }
 }
