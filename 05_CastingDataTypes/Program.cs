@@ -6,6 +6,8 @@ namespace _05_CastingDataTypes
     {
         static void Main(string[] args)
         {
+            Console.Title = "Casting Data Types";
+
             Console.WriteLine("Implicit casting is automatic i.e., a double of 1.2 plus an int of 7. The int is cast to a double.");
             int seven = 7;
             double onePointTwo = 1.2;
@@ -24,7 +26,11 @@ namespace _05_CastingDataTypes
             Console.WriteLine("Because double sum2 = (double)(intNub1 / intNub2) will result in a truction of the decimal position too");
             Console.WriteLine($"double sum3 = (double)(7 / 2) = {sum3}");
 
-
+            Console.WriteLine("More examples:");
+            double num1 = 10.5;
+            int num2 = 2;
+            double numSum = num1 + num2;
+            Console.WriteLine($"Implicit: {num1} + {num2} = {numSum}");
 
         }
     }
