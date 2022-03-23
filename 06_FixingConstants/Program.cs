@@ -46,6 +46,19 @@ namespace _06_FixingConstants
              */
             List<Days> days = Enum.GetValues(typeof(Days)).Cast<Days>().ToList();  // need to work with these further
             Console.WriteLine(String.Join(Environment.NewLine, days));  // need to work with these further
+
+            Console.WriteLine();  // space in output
+            var dayValues = Enum.GetValues(typeof(Days));
+            foreach(int item in dayValues)
+            {
+                Console.WriteLine($"dayValues: {item}");
+            }
+            Console.WriteLine();  // space in output
+            var dayNames = Enum.GetNames(typeof(Days));
+            foreach(string item in dayNames)
+            {
+                Console.WriteLine($"dayNames: {item}");
+            }
         }
     }
 }
