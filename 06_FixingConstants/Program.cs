@@ -17,6 +17,7 @@ namespace _06_FixingConstants
             Console.WriteLine($"Circumference: {piValue * 3}");
 
             Console.WriteLine($"First Weekend day of the week is {Days.Saturday}");
+            Console.WriteLine($"Saturdays index number in the enum list is {(int)Days.Saturday}");
         }
     }
 }
