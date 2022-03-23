@@ -44,18 +44,18 @@ namespace _06_FixingConstants
              To get an IEnumerable<T> of all the values in the enum, call Cast<T>() on the array.
              To get a list, call ToList() after casting.
              */
-            List<Days> days = Enum.GetValues(typeof(Days)).Cast<Days>().ToList();  // need to work with these further
-            Console.WriteLine(String.Join(Environment.NewLine, days));  // need to work with these further
+            List<Days> days = Enum.GetValues(typeof(Days)).Cast<Days>().ToList();  // need to work with these further to understand
+            Console.WriteLine(String.Join(Environment.NewLine, days));  // need to work with these further to understand
 
             Console.WriteLine();  // space in output
             var dayValues = Enum.GetValues(typeof(Days));
-            foreach(int item in dayValues)
+            foreach(int item in dayValues)  // var will result in the string name of the week days
             {
                 Console.WriteLine($"dayValues: {item}");
             }
             Console.WriteLine();  // space in output
             var dayNames = Enum.GetNames(typeof(Days));
-            foreach(string item in dayNames)
+            foreach(string item in dayNames)  // interchangeable with var, string just makes it more apparent whats being capture in the loop
             {
                 Console.WriteLine($"dayNames: {item}");
             }
