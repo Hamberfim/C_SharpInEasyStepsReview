@@ -49,7 +49,7 @@ namespace _06_FixingConstants
 
             Console.WriteLine();  // space in output
             var dayValues = Enum.GetValues(typeof(Days));
-            foreach(int item in dayValues)  // var will result in the string name of the week days
+            foreach(int item in dayValues)  // var will result in the string name of the week days, int forces the use of a built-in enum method for the index position
             {
                 Console.WriteLine($"dayValues: {item}");
             }
