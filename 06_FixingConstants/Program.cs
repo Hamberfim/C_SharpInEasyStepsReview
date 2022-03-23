@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace _06_FixingConstants
 {
@@ -35,6 +37,15 @@ namespace _06_FixingConstants
             {
                 Console.WriteLine($"No, Friday is not defined in the enum list.");
             }
+
+            Console.WriteLine();  // space in output
+            /* 
+             The idea is to use the Enum.GetValues() method to get an array of the enum constants’ values. 
+             To get an IEnumerable<T> of all the values in the enum, call Cast<T>() on the array.
+             To get a list, call ToList() after casting.
+             */
+            List<Days> days = Enum.GetValues(typeof(Days)).Cast<Days>().ToList();  // need to work with these further
+            Console.WriteLine(String.Join(Environment.NewLine, days));  // need to work with these further
         }
     }
 }
