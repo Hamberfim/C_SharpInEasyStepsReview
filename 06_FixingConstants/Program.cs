@@ -24,6 +24,17 @@ namespace _06_FixingConstants
 
             string nameWed = Enum.GetName(daysType, 4);
             Console.WriteLine($"Mid work day is {nameWed}");
+
+            bool flag = Enum.IsDefined(daysType, "Friday");  // is Friday defined in the enum list - True
+            Console.WriteLine($"Is Friday defined in the enum list? {flag}");
+
+            if(flag)
+            {
+                Console.WriteLine($"Yes, Friday is defined in the enum list.");
+            } else
+            {
+                Console.WriteLine($"No, Friday is not defined in the enum list.");
+            }
         }
     }
 }
