@@ -45,7 +45,7 @@ namespace _06_FixingConstants
              To get a list, call ToList() after casting.
              */
             // List<Days> days = Enum.GetValues(typeof(Days)).Cast<Days>().ToList();  // need to work with these further to understand
-            Console.WriteLine(String.Join(Environment.NewLine, days));  // need to work with these further to understand
+            // Console.WriteLine(String.Join(Environment.NewLine, days));  // need to work with these further to understand
 
             Console.WriteLine();  // space in output
             var dayValues = Enum.GetValues(typeof(Days));
