@@ -10,6 +10,8 @@ namespace _06_FixingConstants
         {
             Console.Title = "Fixing Constants";
 
+            const double piValue = 3.14159265358979;
+            var daysType = typeof(Days);
 
 
             Console.WriteLine("Hello World!");
