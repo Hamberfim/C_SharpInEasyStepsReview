@@ -21,6 +21,9 @@ namespace _06_FixingConstants
 
             Console.WriteLine($"First work day of the week is {Days.Monday}");
             Console.WriteLine($"Mondays index number in the enum list is {(int)Days.Monday}");
+
+            string nameWed = Enum.GetName(daysType, 4);
+            Console.WriteLine($"Mid work day is {nameWed}");
         }
     }
 }
