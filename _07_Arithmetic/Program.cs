@@ -53,6 +53,11 @@ namespace _07_Arithmetic
             Console.WriteLine($"Inequality: 0 != a, {zero != letter_a}");
             Console.WriteLine($"Inequality: 0 == A, {zero == letterA}");
             Console.WriteLine($"Inequality: 0 == a, {zero == letter_a}");
+            Console.WriteLine($"Less Than: 0 < 1, {zero < max}");
+            Console.WriteLine($"Less Than or Equal: 1 <= 1, {max <= max}");
+            Console.WriteLine($"Greater Than: 1 > 0, {max > zero}");
+            Console.WriteLine($"Greater Than or Equal: 1 >= 1, {zero >= zero}");
+
 
         }
     }
