@@ -81,11 +81,19 @@ namespace _07_Arithmetic
             Console.WriteLine("(!yes)? if-true-do-this : if-false-do-this = " + (string)(!yes ? "true" : "false"));  //cast bool to string
             int evenNumb = 6;
             int oddNumb = 7;
-            Console.WriteLine("(test-expresion)? if-true-do-this:if-false-do-this");
+            Console.WriteLine();  // space in output
             string parity = (evenNumb % 2 != 0)? "odd" : "even";
             Console.WriteLine($"({evenNumb} % 2 != 0)? 'odd' : 'even' = {parity}");
+            Console.WriteLine("OR");
+            parity = (evenNumb % 2 == 0)? "even" : "odd";
+            Console.WriteLine($"({evenNumb} % 2 == 0)? 'even' : 'odd' = {parity}");
+
+            Console.WriteLine();  // space in output
             parity = (oddNumb % 2 != 0) ? "odd" : "even";
             Console.WriteLine($"({oddNumb} % 2 != 0)? 'odd' : 'even' = {parity}");
+            Console.WriteLine("OR");
+            parity = (oddNumb % 2 == 0) ? "even" : "odd";
+            Console.WriteLine($"({oddNumb} % 2 == 0)? 'even' : 'odd' = {parity}");
         }
     }
 }
