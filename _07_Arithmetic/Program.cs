@@ -34,11 +34,11 @@ namespace _07_Arithmetic
             int b;
             Console.WriteLine($"a = {a = 5}");
             Console.WriteLine($"b = {b = 3}");
-            Console.WriteLine($"add and assign: a += b (5 += 3), result is a = {a += b}");
-            Console.WriteLine($"subtract and assign: a -= b (8 -= 3), result is a = {a -= b}");
-            Console.WriteLine($"multiply and assign: a *= b (5 *= 3), result is a = {a *= b}");
-            Console.WriteLine($"divide and assign: a /= b (15 /= 3), result is a = {a /= b}");
-            Console.WriteLine($"modulus and assign: a %= b (5 %= 3), result is a = {a %= b}");
+            Console.WriteLine($"Add and assign: a += b (5 += 3), result is a = {a += b}");
+            Console.WriteLine($"Subtract and assign: a -= b (8 -= 3), result is a = {a -= b}");
+            Console.WriteLine($"Multiply and assign: a *= b (5 *= 3), result is a = {a *= b}");
+            Console.WriteLine($"Divide and assign: a /= b (15 /= 3), result is a = {a /= b}");
+            Console.WriteLine($"Modulus and assign: a %= b (5 %= 3), result is a = {a %= b}");
         }
     }
 }
