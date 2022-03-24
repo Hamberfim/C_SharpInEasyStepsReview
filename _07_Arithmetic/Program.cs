@@ -46,9 +46,11 @@ namespace _07_Arithmetic
             int number = 0;
             int max = 1;
             char letterA = 'A';
-            char leter_a = 'a';
+            char letter_a = 'a';
             Console.WriteLine($"Equality: 0 == 0, {zero == number}");
+            Console.WriteLine($"Equality: A == A, {letterA == letterA}");
             Console.WriteLine($"Inequality: 0 != A, {zero != letterA}");
+            Console.WriteLine($"Inequality: 0 != a, {zero != letter_a}");
 
         }
     }
