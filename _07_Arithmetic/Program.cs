@@ -34,6 +34,7 @@ namespace _07_Arithmetic
             int b;
             Console.WriteLine($"a = {a = 5}");
             Console.WriteLine($"b = {b = 3}");
+            Console.WriteLine($"add and assign: a += b (5 += 3), result is a = {a += b}");
         }
     }
 }
