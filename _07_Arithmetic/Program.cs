@@ -51,6 +51,8 @@ namespace _07_Arithmetic
             Console.WriteLine($"Equality: A == A, {letterA == letterA}");
             Console.WriteLine($"Inequality: 0 != A, {zero != letterA}");
             Console.WriteLine($"Inequality: 0 != a, {zero != letter_a}");
+            Console.WriteLine($"Inequality: 0 == A, {zero == letterA}");
+            Console.WriteLine($"Inequality: 0 == a, {zero == letter_a}");
 
         }
     }
