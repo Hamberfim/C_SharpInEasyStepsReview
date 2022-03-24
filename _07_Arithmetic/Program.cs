@@ -36,6 +36,7 @@ namespace _07_Arithmetic
             Console.WriteLine($"b = {b = 3}");
             Console.WriteLine($"add and assign: a += b (5 += 3), result is a = {a += b}");
             Console.WriteLine($"subtract and assign: a -= b (8 -= 3), result is a = {a -= b}");
+            Console.WriteLine($"multiply and assign: a *= b (5 *= 3), result is a = {a *= b}");
         }
     }
 }
