@@ -14,7 +14,7 @@ namespace _07_Arithmetic
             Console.WriteLine($"Substraction: {ten} - {four} = " + (ten - four));
             Console.WriteLine($"Multiplication: {ten} * {four} = " + (ten * four));
             Console.WriteLine($"Division: {ten} / {four} = " + ((double)ten / four));  // cast to double for decimal remainder
-            Console.WriteLine($"");
+            Console.WriteLine($"Modulus: 7 % 4 = " + (7 % 4));
             Console.WriteLine($"");
             Console.WriteLine($"");
             Console.WriteLine($"");
