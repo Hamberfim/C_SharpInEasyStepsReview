@@ -15,7 +15,11 @@ namespace _07_Arithmetic
             Console.WriteLine($"Multiplication: {ten} * {four} = " + (ten * four));
             Console.WriteLine($"Division: {ten} / {four} = " + ((double)ten / four));  // cast to double for decimal remainder
             Console.WriteLine($"Modulus: 7 % 4 = " + (7 % 4));
-            Console.WriteLine($"");
+
+            Console.WriteLine();  // space in output
+            Console.WriteLine($"Postfix increment ({ten}++): " + (ten++));
+            Console.WriteLine($"Postfix result: " + ten);
+            
             Console.WriteLine($"");
             Console.WriteLine($"");
             Console.WriteLine($"");
