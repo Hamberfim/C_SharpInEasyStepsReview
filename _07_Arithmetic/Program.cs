@@ -19,7 +19,8 @@ namespace _07_Arithmetic
             Console.WriteLine();  // space in output
             Console.WriteLine($"Postfix increment ({ten}++): " + (ten++));
             Console.WriteLine($"Postfix result: " + ten);
-            
+            Console.WriteLine($"Postfix increment ({four}++): " + (four++));
+            Console.WriteLine($"Postfix result: " + four);
             Console.WriteLine($"");
             Console.WriteLine($"");
             Console.WriteLine($"");
