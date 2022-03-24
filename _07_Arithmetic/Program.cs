@@ -73,6 +73,12 @@ namespace _07_Arithmetic
             Console.WriteLine($"no = {no}");  // expected false
             Console.WriteLine($"!yes = {!yes}");  // expected false
             Console.WriteLine($"!no = {!no}");  // expected true
+
+            Console.WriteLine();  // space in output
+            Console.WriteLine("Condition Comparisons - Tenary");
+            Console.WriteLine("(test-expresion)? if-true-do-this:if-false-do-this");
+            Console.WriteLine("(yes)? if-true-do-this : if-false-do-this = " + (string)(yes ? "true" : "false"));  //cast bool to string
+            Console.WriteLine("(!yes)? if-true-do-this : if-false-do-this = " + (string)(!yes ? "true" : "false"));  //cast bool to string
         }
     }
 }
