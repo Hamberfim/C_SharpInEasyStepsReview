@@ -12,7 +12,7 @@ namespace _07_Arithmetic
 
             Console.WriteLine($"Addition: {ten} + {four} = " + (ten + four));
             Console.WriteLine($"Substraction: {ten} - {four} = " + (ten - four));
-            Console.WriteLine($"");
+            Console.WriteLine($"Multiplication: {ten} * {four} = " + (ten * four));
             Console.WriteLine($"");
             Console.WriteLine($"");
             Console.WriteLine($"");
