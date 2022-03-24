@@ -61,8 +61,9 @@ namespace _07_Arithmetic
             Console.WriteLine();  // space in output
             Console.WriteLine("Logical Comparisons");
             bool yes = true, no = false;
-            Console.WriteLine($"yes && yes : {yes && yes}");
-            Console.WriteLine($"yes && no : {yes && no}");
+            Console.WriteLine($"yes && yes : {yes && yes}");  // expected true
+            Console.WriteLine($"yes && no : {yes && no}");  // expected false
+            Console.WriteLine($"no && no : {no && no}");  // expected false
         }
     }
 }
