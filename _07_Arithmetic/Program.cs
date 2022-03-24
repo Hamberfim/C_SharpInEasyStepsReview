@@ -58,7 +58,10 @@ namespace _07_Arithmetic
             Console.WriteLine($"Greater Than: 1 > 0, {max > zero}");
             Console.WriteLine($"Greater Than or Equal: 1 >= 1, {zero >= zero}");
 
-
+            Console.WriteLine();  // space in output
+            Console.WriteLine("Logical Comparisons");
+            bool yes = true, no = false;
+            Console.WriteLine($"yes && yes : {yes && yes}");
         }
     }
 }
