@@ -71,7 +71,8 @@ namespace _07_Arithmetic
             Console.WriteLine("NOT Logical Comparisons");
             Console.WriteLine($"yes = {yes}");  // expected true
             Console.WriteLine($"no = {no}");  // expected false
-
+            Console.WriteLine($"!yes = {!yes}");  // expected false
+            Console.WriteLine($"!no = {!no}");  // expected true
         }
     }
 }
