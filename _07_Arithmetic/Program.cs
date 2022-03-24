@@ -33,6 +33,7 @@ namespace _07_Arithmetic
             int a;
             int b;
             Console.WriteLine($"a = {a = 5}");
+            Console.WriteLine($"b = {b = 3}");
         }
     }
 }
