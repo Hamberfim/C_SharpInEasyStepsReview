@@ -48,6 +48,7 @@ namespace _07_Arithmetic
             char letterA = 'A';
             char leter_a = 'a';
             Console.WriteLine($"Equality: 0 == 0, {zero == number}");
+            Console.WriteLine($"Inequality: 0 != A, {zero != letterA}");
 
         }
     }
