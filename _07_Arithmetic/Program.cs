@@ -30,7 +30,9 @@ namespace _07_Arithmetic
 
             Console.WriteLine();  // space in output
             Console.WriteLine("Short hand value assignment");
-            Console.WriteLine($"");
+            int a;
+            int b;
+            Console.WriteLine($"a = {a = 5}");
         }
     }
 }
