@@ -13,7 +13,7 @@ namespace _07_Arithmetic
             Console.WriteLine($"Addition: {ten} + {four} = " + (ten + four));
             Console.WriteLine($"Substraction: {ten} - {four} = " + (ten - four));
             Console.WriteLine($"Multiplication: {ten} * {four} = " + (ten * four));
-            Console.WriteLine($"");
+            Console.WriteLine($"Division: {ten} / {four} = " + ((double)ten / four));  // cast to double for decimal remainder
             Console.WriteLine($"");
             Console.WriteLine($"");
             Console.WriteLine($"");
