@@ -66,6 +66,7 @@ namespace _07_Arithmetic
             Console.WriteLine($"no && no : {no && no}");  // expected false
             Console.WriteLine("OR Logical Comparisons");
             Console.WriteLine($"yes || yes : {yes || yes}");  // expected true
+            Console.WriteLine($"yes || no : {yes || no}");  // expected true
         }
     }
 }
