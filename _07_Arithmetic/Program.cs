@@ -25,6 +25,8 @@ namespace _07_Arithmetic
             Console.WriteLine();  // space in output
             Console.WriteLine($"Pretfix increment (++{ten}): " + (++ten));
             Console.WriteLine($"Prefix result: " + ten);
+            Console.WriteLine($"Pretfix increment (++{four}): " + (++four));
+            Console.WriteLine($"Prefix result: " + four);
         }
     }
 }
