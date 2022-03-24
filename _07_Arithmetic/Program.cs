@@ -94,6 +94,10 @@ namespace _07_Arithmetic
             Console.WriteLine("OR");
             parity = (oddNumb % 2 == 0) ? "even" : "odd";
             Console.WriteLine($"({oddNumb} % 2 == 0)? 'even' : 'odd' = {parity}");
+
+            Console.WriteLine();  // space in output
+            int biggestNumb = (evenNumb > oddNumb) ? evenNumb : oddNumb;
+            Console.WriteLine($"int biggestNumb = (evenNumb > oddNumb) ? evenNumb : oddNumb  >>> The biggest number is : {biggestNumb}");
         }
     }
 }
