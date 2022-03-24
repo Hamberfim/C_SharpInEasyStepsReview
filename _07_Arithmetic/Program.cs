@@ -21,9 +21,10 @@ namespace _07_Arithmetic
             Console.WriteLine($"Postfix result: " + ten);
             Console.WriteLine($"Postfix increment ({four}++): " + (four++));
             Console.WriteLine($"Postfix result: " + four);
-            Console.WriteLine($"");
-            Console.WriteLine($"");
-            Console.WriteLine($"");
+
+            Console.WriteLine();  // space in output
+            Console.WriteLine($"Pretfix increment (++{ten}): " + (++ten));
+            Console.WriteLine($"Prefix result: " + ten);
         }
     }
 }
