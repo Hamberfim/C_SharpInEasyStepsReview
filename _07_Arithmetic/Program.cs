@@ -83,17 +83,17 @@ namespace _07_Arithmetic
             int oddNumb = 7;
             Console.WriteLine();  // space in output
             string parity = (evenNumb % 2 != 0)? "odd" : "even";
-            Console.WriteLine($"({evenNumb} % 2 != 0)? 'odd' : 'even' = {parity}");
+            Console.WriteLine($"({evenNumb} % 2 != 0)? 'odd' : 'even' = is {parity}");
             Console.WriteLine("OR");
             parity = (evenNumb % 2 == 0)? "even" : "odd";
-            Console.WriteLine($"({evenNumb} % 2 == 0)? 'even' : 'odd' = {parity}");
+            Console.WriteLine($"({evenNumb} % 2 == 0)? 'even' : 'odd' = is {parity}");
 
             Console.WriteLine();  // space in output
             parity = (oddNumb % 2 != 0) ? "odd" : "even";
-            Console.WriteLine($"({oddNumb} % 2 != 0)? 'odd' : 'even' = {parity}");
+            Console.WriteLine($"({oddNumb} % 2 != 0)? 'odd' : 'even' = is {parity}");
             Console.WriteLine("OR");
             parity = (oddNumb % 2 == 0) ? "even" : "odd";
-            Console.WriteLine($"({oddNumb} % 2 == 0)? 'even' : 'odd' = {parity}");
+            Console.WriteLine($"({oddNumb} % 2 == 0)? 'even' : 'odd' = is {parity}");
 
             Console.WriteLine();  // space in output
             int biggestNumb = (evenNumb > oddNumb) ? evenNumb : oddNumb;
