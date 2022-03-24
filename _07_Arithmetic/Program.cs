@@ -39,6 +39,16 @@ namespace _07_Arithmetic
             Console.WriteLine($"Multiply and assign: a *= b (5 *= 3), result is a = {a *= b}");
             Console.WriteLine($"Divide and assign: a /= b (15 /= 3), result is a = {a /= b}");
             Console.WriteLine($"Modulus and assign: a %= b (5 %= 3), result is a = {a %= b}");
+
+            Console.WriteLine();  // space in output
+            Console.WriteLine("Comparing Values");
+            int zero = 0;
+            int number = 0;
+            int max = 1;
+            char letterA = 'A';
+            char leter_a = 'a';
+            Console.WriteLine($"Equality: 0 == 0, {zero == number}");
+
         }
     }
 }
