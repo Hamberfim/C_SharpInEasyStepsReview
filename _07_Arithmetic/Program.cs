@@ -62,6 +62,7 @@ namespace _07_Arithmetic
             Console.WriteLine("Logical Comparisons");
             bool yes = true, no = false;
             Console.WriteLine($"yes && yes : {yes && yes}");
+            Console.WriteLine($"yes && no : {yes && no}");
         }
     }
 }
