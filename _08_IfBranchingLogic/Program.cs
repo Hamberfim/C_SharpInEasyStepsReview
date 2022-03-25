@@ -31,30 +31,30 @@ namespace _08_IfBranchingLogic
             Console.WriteLine();  // space in output
             if(negNumericFlag >= 0)
             {
-                Console.WriteLine($"{negNumericFlag} Flag is greater than or equal to 0");
+                Console.WriteLine($"Flag {negNumericFlag} is greater than or equal to 0");
             } else
             {
-                Console.WriteLine($"{negNumericFlag} Flag is NOT greater than equal to 0");
+                Console.WriteLine($"Flag {negNumericFlag} is NOT greater than equal to 0");
             }
 
             Console.WriteLine();  // space in output
             if (posNumericFlag >= 1)
             {
-                Console.WriteLine($"{posNumericFlag} Flag is greater than or equal to 1");
+                Console.WriteLine($"Flag {posNumericFlag} is greater than or equal to 1");
             }
             else
             {
-                Console.WriteLine($"{posNumericFlag} Flag is NOT greater than or equal to 1");
+                Console.WriteLine($"Flag {posNumericFlag} is NOT greater than or equal to 1");
             }
 
             Console.WriteLine();  // space in output
-            if (posNumericFlag >= 2)
+            if (negNumericFlag >= 1)
             {
-                Console.WriteLine($"{posNumericFlag} Flag is greater than or equal to 2");
+                Console.WriteLine($"Flag {negNumericFlag} is greater than or equal to 1");
             }
             else
             {
-                Console.WriteLine($"{posNumericFlag} Flag is NOT greater than or equal to 2");
+                Console.WriteLine($"Flag {negNumericFlag} is NOT greater than or equal to 1");
             }
 
         }
