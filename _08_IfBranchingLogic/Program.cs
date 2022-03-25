@@ -82,9 +82,12 @@ namespace _08_IfBranchingLogic
             } else if((usrNumber >= 1 && usrNumber <= 10) && usrLetter != 'c')
             {
                 Console.WriteLine($"Your number of '{usrNumber}' is greater than zero and your letter choice of '{usrLetter}' is acceptible.");
-            } else if(usrNumber < 1)
+            } else if((usrNumber < 1 || usrNumber > 10) && usrLetter != 'x' && usrLetter != 'y' && usrLetter != 'z')
             {
-                Console.WriteLine($"You should have picked a number greater '{usrNumber}' but your letter choice of '{usrLetter}' is acceptible.");
+                Console.WriteLine($"You should have picked a number greater '0' but less than '11'. Your letter choice of '{usrLetter}' is acceptible.");
+            } else
+            {
+                Console.WriteLine($"I guess I can live with your choices of '{usrNumber}' and '{usrLetter}'");
             }
 
         }
