@@ -76,7 +76,7 @@ namespace _08_IfBranchingLogic
             char usrLetter = Convert.ToChar(Console.ReadLine());
             usrLetter = char.ToLower(usrLetter);  // normalize input for use
 
-            if(usrNumber >= 1 && usrLetter == 'c')
+            if((usrNumber >= 1 && usrNumber <= 10) && usrLetter == 'c')
             {
                 Console.WriteLine($"Your input combination of '{usrNumber}' and '{usrLetter}' is the magic combo! You're a wizard!");
             } else if(usrNumber >= 1 && usrLetter != 'c')
