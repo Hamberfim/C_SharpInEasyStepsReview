@@ -41,8 +41,29 @@ namespace _09_ifBranchSwitchBranch
                 Console.WriteLine($"{usrDayInput} is an invalid choice for a day of the week. Must be 1-7.");
             }
 
-
-
+            // decalre and initialize
+            Console.WriteLine();  // space in output
+            string day;
+            switch(usrDayInput)
+            {
+                case 1: day = daysArray[0];
+                    break;
+                case 2: day = daysArray[1];
+                    break;
+                case 3: day = daysArray[2];
+                    break;
+                case 4: day = daysArray[3];
+                    break;
+                case 5: day = daysArray[4];
+                    break;
+                case 6: day = daysArray[5];
+                    break;
+                case 7: day = daysArray[6];
+                    break;
+                default: day = "Monday is the start of the work week, Saturdays are the start of the weekend.";
+                    break;
+            }
+            Console.WriteLine($"Based on your input of {usrDayInput} the Switch/Case output is: {day}");
         }
     }
 }
