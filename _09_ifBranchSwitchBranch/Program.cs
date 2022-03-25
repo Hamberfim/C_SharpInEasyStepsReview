@@ -83,6 +83,11 @@ namespace _09_ifBranchSwitchBranch
             Console.WriteLine("=== For Looping ===");
             // syntax | for (initializer; test-expression; updater/count;) {statements}
 
+            for(int i= 0; i < daysArray.Length; i++)
+            {
+                Console.WriteLine(daysArray[i]);
+            }
+
         }
     }
 }
