@@ -23,9 +23,13 @@ namespace _08_IfBranchingLogic
             // Ternary operation logic
             string negflagResult = (negNumericFlag == negNumericBool) ? "Camparision-Both are negative." : "Camparision-Both are NOT negative";
             Console.WriteLine(negflagResult);
-
+            string posflagResult = (posNumericFlag == posNumericBool) ? "Camparision-Both are positive." : "Camparision-Both are NOT positive";
+            Console.WriteLine(posflagResult);
+            string notEqualflagResult = (negNumericFlag == posNumericBool) ? "Camparision-Both are Equal." : "Camparision-Both are NOT Equal";
+            Console.WriteLine(notEqualflagResult);
 
             Console.WriteLine();  // space in output
+
         }
     }
 }
