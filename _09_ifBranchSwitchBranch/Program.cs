@@ -88,6 +88,30 @@ namespace _09_ifBranchSwitchBranch
                 Console.WriteLine(daysArray[i]);
             }
 
+            // decalre and initialize
+            Console.WriteLine();  // space in output
+            Console.WriteLine("=== while Looping ===");
+            // syntax | while(test-expression) {statements} | do {statements} while(test-expression);
+            int[] countDays = new int[7];
+            int count = 0;
+            Console.Write("Count up Number of days ");
+            while (count < daysArray.Length)
+            {
+                countDays[count] = count;
+                Console.Write($" | {countDays[count] + 1}");  // write output to single line (no new line)
+                count++;
+            }
+            Console.Write(" |");
+            Console.WriteLine();  // space in output
+
+            Console.Write("Count down Number of days ");
+            do {
+                count--;
+                Console.Write($" | {countDays[count] + 1}");  // write output to single line (no new line)
+                
+            } while (count > 0);
+            Console.Write(" |");
+            Console.WriteLine();  // space in output
         }
     }
 }
