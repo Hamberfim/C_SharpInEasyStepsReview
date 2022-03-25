@@ -8,39 +8,50 @@ namespace _09_ifBranchSwitchBranch
         {
             // decalre and initialize
             string[] daysArray = new string [] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+           
             Console.WriteLine("Enter an number for a day of the week:");
-            int usrDayInput = Convert.ToInt32(Console.ReadLine());
+            var usrInputAsStr = Console.ReadLine();
+            int usrDayInput;
+            bool parseSuccess = int.TryParse(usrInputAsStr, out usrDayInput);
+
             Console.WriteLine("=== if branching ===");
-            if(usrDayInput == 1)
+            if (parseSuccess)
             {
-                Console.WriteLine(daysArray[usrDayInput - 1]);
-            } else if(usrDayInput == 2)
-            {
-                Console.WriteLine(daysArray[usrDayInput - 1]);
-            }
-            else if (usrDayInput == 3)
-            {
-                Console.WriteLine(daysArray[usrDayInput - 1]);
-            }
-            else if (usrDayInput == 4)
-            {
-                Console.WriteLine(daysArray[usrDayInput - 1]);
-            }
-            else if (usrDayInput == 5)
-            {
-                Console.WriteLine(daysArray[usrDayInput - 1]);
-            }
-            else if (usrDayInput == 6)
-            {
-                Console.WriteLine(daysArray[usrDayInput - 1]);
-            }
-            else if (usrDayInput == 7)
-            {
-                Console.WriteLine(daysArray[usrDayInput - 1]);
+                if (usrDayInput == 1)
+                {
+                    Console.WriteLine(daysArray[usrDayInput - 1]);
+                }
+                else if (usrDayInput == 2)
+                {
+                    Console.WriteLine(daysArray[usrDayInput - 1]);
+                }
+                else if (usrDayInput == 3)
+                {
+                    Console.WriteLine(daysArray[usrDayInput - 1]);
+                }
+                else if (usrDayInput == 4)
+                {
+                    Console.WriteLine(daysArray[usrDayInput - 1]);
+                }
+                else if (usrDayInput == 5)
+                {
+                    Console.WriteLine(daysArray[usrDayInput - 1]);
+                }
+                else if (usrDayInput == 6)
+                {
+                    Console.WriteLine(daysArray[usrDayInput - 1]);
+                }
+                else if (usrDayInput == 7)
+                {
+                    Console.WriteLine(daysArray[usrDayInput - 1]);
+                }
             } else
             {
-                Console.WriteLine($"{usrDayInput} is an invalid choice for a day of the week. Must be 1-7.");
+                usrDayInput = -1; // default in case nothing is entered by user
+                Console.WriteLine("User input was not valid so it was set to -1. Program Exited");
             }
+            
+            
 
             // decalre and initialize
             Console.WriteLine();  // space in output
@@ -62,10 +73,10 @@ namespace _09_ifBranchSwitchBranch
                     break;
                 case 7: day = daysArray[6];
                     break;
-                default: day = "Monday is the start of the work week, Saturdays are the start of the weekend.";
+                default: day = "User input was not valid so it was set to -1. Program Exited";
                     break;
             }
-            Console.WriteLine($"Based on your input of {usrDayInput} the Switch/Case output is: {day}");
+            Console.WriteLine(day);
         }
     }
 }
