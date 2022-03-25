@@ -110,6 +110,9 @@ namespace _09_ifBranchSwitchBranch
                 if(count == 3)
                 {
                     Console.Write($" | {countDays[count] + 1}*");  // write output to single line (no new line)
+                } else if(count == 0)
+                {
+                    Console.Write($" | {countDays[count] + 1}^");  // write output to single line (no new line)
                 }
                 else
                 {
@@ -120,6 +123,7 @@ namespace _09_ifBranchSwitchBranch
             } while (count > 0);
             Console.Write(" |");
             Console.WriteLine("\n\t\t*Mid-Week");  // space in output
+            Console.WriteLine("\t\t^END-OF-LINE");  // space in output
         }
     }
 }
