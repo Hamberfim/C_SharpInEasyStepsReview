@@ -37,7 +37,15 @@ namespace _08_IfBranchingLogic
                 Console.WriteLine($"{negNumericFlag} Flag is NOT greater than equal to 0");
             }
 
-            
+            Console.WriteLine();  // space in output
+            if (posNumericFlag >= 1)
+            {
+                Console.WriteLine($"{posNumericFlag} Flag is greater than or equal to 1");
+            }
+            else
+            {
+                Console.WriteLine($"{posNumericFlag} Flag is NOT greater than equal to 1");
+            }
         }
     }
 }
