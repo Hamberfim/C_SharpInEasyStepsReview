@@ -57,6 +57,36 @@ namespace _08_IfBranchingLogic
                 Console.WriteLine($"Flag {negNumericFlag} is NOT greater than or equal to 1");
             }
 
+            // decare and intialize
+            Console.WriteLine();  // space in output
+            Console.WriteLine("Please enter a number: ");
+            double usrNumber = Convert.ToDouble(Console.ReadLine());
+
+            if(usrNumber >= 1 && usrNumber <= 10)
+            {
+                Console.WriteLine($"Your number of {usrNumber} is within the range of 1-10.");
+            }else
+            {
+                Console.WriteLine($"Your number of {usrNumber} is outside the range of 1-10.");
+            }
+
+            // decare and intialize
+            Console.WriteLine();  // space in output
+            Console.WriteLine("Thanks, now enter a single letter: ");
+            char usrLetter = Convert.ToChar(Console.ReadLine());
+            usrLetter = char.ToLower(usrLetter);  // normalize input for use
+
+            if(usrNumber >= 1 && usrLetter == 'c')
+            {
+                Console.WriteLine($"Your input combination of '{usrNumber}' and '{usrLetter}' is the magic combo! You're a wizard!");
+            } else if(usrNumber >= 1 && usrLetter != 'c')
+            {
+                Console.WriteLine($"Your number of '{usrNumber}' is greater than zero and your letter choice of '{usrLetter}' is acceptible.");
+            } else if(usrNumber < 1)
+            {
+                Console.WriteLine($"You should have picked a number greater '{usrNumber}' but your letter choice of '{usrLetter}' is acceptible.");
+            }
+
         }
     }
 }
