@@ -107,11 +107,19 @@ namespace _09_ifBranchSwitchBranch
             Console.Write("Count down Number of days ");
             do {
                 count--;
-                Console.Write($" | {countDays[count] + 1}");  // write output to single line (no new line)
+                if(count == 3)
+                {
+                    Console.Write($" | {countDays[count] + 1}*");  // write output to single line (no new line)
+                }
+                else
+                {
+                    Console.Write($" | {countDays[count] + 1}");  // write output to single line (no new line)
+                }
+                
                 
             } while (count > 0);
             Console.Write(" |");
-            Console.WriteLine();  // space in output
+            Console.WriteLine("\n\t\t*Mid-Week");  // space in output
         }
     }
 }
