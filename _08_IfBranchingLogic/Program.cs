@@ -44,8 +44,19 @@ namespace _08_IfBranchingLogic
             }
             else
             {
-                Console.WriteLine($"{posNumericFlag} Flag is NOT greater than equal to 1");
+                Console.WriteLine($"{posNumericFlag} Flag is NOT greater than or equal to 1");
             }
+
+            Console.WriteLine();  // space in output
+            if (posNumericFlag >= 2)
+            {
+                Console.WriteLine($"{posNumericFlag} Flag is greater than or equal to 2");
+            }
+            else
+            {
+                Console.WriteLine($"{posNumericFlag} Flag is NOT greater than or equal to 2");
+            }
+
         }
     }
 }
