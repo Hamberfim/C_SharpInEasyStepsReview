@@ -48,7 +48,7 @@ namespace _09_ifBranchSwitchBranch
             } else
             {
                 usrDayInput = -1; // default in case nothing is entered by user
-                Console.WriteLine("User input was not valid so it was set to -1. Program Exited");
+                Console.WriteLine("User input was not valid so it was set to -1. Program Exited!");
             }
             
             
@@ -73,7 +73,7 @@ namespace _09_ifBranchSwitchBranch
                     break;
                 case 7: day = daysArray[6];
                     break;
-                default: day = "User input was not valid so it was set to -1. Program Exited";
+                default: day = "User input was not valid so it was set to -1. Program Exited!";
                     break;
             }
             Console.WriteLine(day);
