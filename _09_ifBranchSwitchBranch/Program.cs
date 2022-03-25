@@ -77,6 +77,12 @@ namespace _09_ifBranchSwitchBranch
                     break;
             }
             Console.WriteLine(day);
+
+            // decalre and initialize
+            Console.WriteLine();  // space in output
+            Console.WriteLine("=== For Looping ===");
+            // syntax | for (initializer; test-expression; updater/count;) {statements}
+
         }
     }
 }
