@@ -79,7 +79,7 @@ namespace _08_IfBranchingLogic
             if((usrNumber >= 1 && usrNumber <= 10) && usrLetter == 'c')
             {
                 Console.WriteLine($"Your input combination of '{usrNumber}' and '{usrLetter}' is the magic combo! You're a wizard!");
-            } else if(usrNumber >= 1 && usrLetter != 'c')
+            } else if((usrNumber >= 1 && usrNumber <= 10) && usrLetter != 'c')
             {
                 Console.WriteLine($"Your number of '{usrNumber}' is greater than zero and your letter choice of '{usrLetter}' is acceptible.");
             } else if(usrNumber < 1)
