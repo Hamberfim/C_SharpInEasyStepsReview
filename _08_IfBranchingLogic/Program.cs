@@ -14,10 +14,16 @@ namespace _08_IfBranchingLogic
             bool negFlag = false;
             bool posFlag = true;
 
-            // Ternary operation logic
-            string 
+            // can't cast a bool to int so use ternary
+            int negNumericBool = (negFlag) ? 1 : 0;  // returns false so result is zero
+            int posNumericBool = (posFlag) ? 1 : 0;  // returns true so result is one
+            // Console.WriteLine(negNumericBool);
+            // Console.WriteLine(posNumericBool);
 
-            Console.WriteLine("Hello World!");
+            // Ternary operation logic
+            string negflagResult = (negNumericFlag == negNumericBool) ? "Camparision-Both are negative" : "Camparision-Both are NOT negative";
+            Console.WriteLine(negflagResult);
+            Console.WriteLine();  // space in output
         }
     }
 }
