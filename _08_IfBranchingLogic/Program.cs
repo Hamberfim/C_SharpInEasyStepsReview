@@ -29,7 +29,15 @@ namespace _08_IfBranchingLogic
             Console.WriteLine(notEqualflagResult);
 
             Console.WriteLine();  // space in output
+            if(negNumericFlag >= 0)
+            {
+                Console.WriteLine($"{negNumericFlag} Flag is greater than or equal to 0");
+            } else
+            {
+                Console.WriteLine($"{negNumericFlag} Flag is NOT greater than equal to 0");
+            }
 
+            
         }
     }
 }
