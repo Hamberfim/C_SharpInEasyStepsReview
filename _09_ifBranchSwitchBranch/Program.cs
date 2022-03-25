@@ -10,6 +10,7 @@ namespace _09_ifBranchSwitchBranch
             string[] daysArray = new string [] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
             Console.WriteLine("Enter an number for a day of the week:");
             int usrDayInput = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("=== if branching ===");
             if(usrDayInput == 1)
             {
                 Console.WriteLine(daysArray[usrDayInput - 1]);
@@ -43,6 +44,7 @@ namespace _09_ifBranchSwitchBranch
 
             // decalre and initialize
             Console.WriteLine();  // space in output
+            Console.WriteLine("=== switch branching ===");
             string day;
             switch(usrDayInput)
             {
