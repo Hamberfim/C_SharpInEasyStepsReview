@@ -23,26 +23,33 @@ namespace _010_ForEachIteration
 
             // dictionary collection is a key: value pair
             // dictionary declaration syntax | Dictionary <data-type, data-type> dictionary-name = new Dictionary <data-type, data-type>();
-            Dictionary<string, string> babyNamesGender = new Dictionary<string, string>();
+            Dictionary<string, string> BabyNamesGender = new Dictionary<string, string>();
             // populate dictionary
-            babyNamesGender.Add("Liam", "male");
-            babyNamesGender.Add("Olivia", "female");
-            babyNamesGender.Add("Noah", "male");
-            babyNamesGender.Add("Emma", "female");
-            babyNamesGender.Add("Oliver", "male");
-            babyNamesGender.Add("Ava", "female");
-            babyNamesGender.Add("Elijah", "male");
-            babyNamesGender.Add("Charlotte", "female");
-            babyNamesGender.Add("William", "male");
-            babyNamesGender.Add("Sophia", "female");
+            BabyNamesGender.Add("Liam", "male");
+            BabyNamesGender.Add("Olivia", "female");
+            BabyNamesGender.Add("Noah", "male");
+            BabyNamesGender.Add("Emma", "female");
+            BabyNamesGender.Add("Oliver", "male");
+            BabyNamesGender.Add("Ava", "female");
+            BabyNamesGender.Add("Elijah", "male");
+            BabyNamesGender.Add("Charlotte", "female");
+            BabyNamesGender.Add("William", "male");
+            BabyNamesGender.Add("Sophia", "female");
 
             Console.WriteLine(); // space in output
             Console.WriteLine("=== Baby Names & Gender ===");
-            foreach(KeyValuePair<string, string> babyName in babyNamesGender)
+            foreach(KeyValuePair<string, string> babyName in BabyNamesGender)
             {
                 Console.WriteLine($"Key(name): {babyName.Key}, Value(gender): {babyName.Value}");
             }
 
+            Dictionary<string, string> Employees = new Dictionary<string, string>();
+            Employees.Add("Harison", "IT");
+            Employees.Add("William", "HR");
+            Employees.Add("Linda", "COM");
+            Employees.Add("Cynthia", "COM");
+            Employees.Add("Bradly", "ADMIN");
+         
         }
     }
 }
