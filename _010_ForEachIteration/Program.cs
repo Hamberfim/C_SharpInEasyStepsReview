@@ -6,7 +6,7 @@ namespace _010_ForEachIteration
     {
         static void Main(string[] args)
         {
-            Console.Title = "Foreach iteration";
+            Console.Title = "Foreach iteration - arrays & dictionaries";
             // declare and initialize
             // array syntax | data-type variable-name = new data-type[array length] {array items}
             string[] babyNames = new string[10] { "Liam", "Olivia", "Noah", "Emma", "Oliver", "Ava", "Elijah", "Charlotte", "William", "Sophia" };
@@ -19,6 +19,8 @@ namespace _010_ForEachIteration
                 Console.WriteLine($"    List position: {listIndex} - {babyName}");
                 listIndex++;
             }
+
+
 
         }
     }
