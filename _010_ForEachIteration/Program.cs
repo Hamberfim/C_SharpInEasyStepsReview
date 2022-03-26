@@ -65,9 +65,17 @@ namespace _010_ForEachIteration
                 { 008, new EmployeeInfo { FirstName="Debrah", LastName="Hoodisha", Department="Chief Executive Officer" } }
             };
 
-            foreach(var idx in Enumerable.Range(001, 8))  // Range(start, count) not sure I understand this use of Enumerable
+            // Range(start, count) not sure I understand this use of Enumerable
+            foreach (var idx in Enumerable.Range(001, 8))  // Range(start, count) not sure I understand this use of Enumerable
             {
                 Console.WriteLine($"ID: {idx} is {employees[idx].FirstName} {employees[idx].LastName} and is the {employees[idx].Department}");
+            }
+
+            Console.WriteLine(); // space in output
+            // This makes more sense than Enumerable.Range and I do not need to know the start id or the record count
+            foreach (KeyValuePair<int, EmployeeInfo> employee in employees)
+            {
+                Console.WriteLine($"Key(ID): {employee.Key}, Value(FirstName): {employee.Value.FirstName}, Value(LastName): {employee.Value.LastName}, Value(Department): {employee.Value.Department}");
             }
          
         }
