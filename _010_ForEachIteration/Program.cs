@@ -61,7 +61,7 @@ namespace _010_ForEachIteration
                 { 004, new EmployeeInfo { FirstName="Cynthia", LastName="Brockman", Department="Asst. Dir. of Communications" } },
                 { 005, new EmployeeInfo { FirstName="Ruthann", LastName="Zinkler", Department="Director of Human Resources" } },
                 { 006, new EmployeeInfo { FirstName="Angelica", LastName="Hintz", Department="Asst. Dir. of Human Resources" } },
-                { 007, new EmployeeInfo { FirstName="Rachell", LastName="Obermen", Department="Chief Finacial Officer" } },
+                { 007, new EmployeeInfo { FirstName="Rachell", LastName="Obermen", Department="Chief Financial Officer" } },
                 { 008, new EmployeeInfo { FirstName="Debrah", LastName="Hoodisha", Department="Chief Executive Officer" } }
             };
 
