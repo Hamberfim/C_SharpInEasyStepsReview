@@ -66,7 +66,7 @@ namespace _010_ForEachIteration
             };
 
             // Range(start, count) not sure I understand this use of Enumerable
-            foreach (var idx in Enumerable.Range(001, 8))  // Range(start, count) not sure I understand this use of Enumerable
+            foreach (var idx in Enumerable.Range(001, 8))  // Range(start, count) ?? How would one use dynamic start/count variables ??
             {
                 Console.WriteLine($"ID: {idx} is {employees[idx].FirstName} {employees[idx].LastName} and is the {employees[idx].Department}");
             }
