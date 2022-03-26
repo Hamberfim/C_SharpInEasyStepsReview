@@ -11,6 +11,13 @@ namespace _010_ForEachIteration
             // syntax | foreach(data-type variable name in array-name/collection) {statements}
             string[] babyNames = new string[10] { "Liam", "Olivia", "Noah", "Emma", "Oliver", "Ava", "Elijah", "Charlotte", "William", "Sophia" };
 
+            Console.WriteLine("=== Popular Baby Names ===");
+            int listIndex = 1;
+            foreach(string babyName in babyNames)
+            {
+                Console.WriteLine($"    List position: {listIndex} - {babyName}");
+                listIndex++;
+            }
 
         }
     }
