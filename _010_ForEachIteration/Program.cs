@@ -1,10 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;  //required for dictionary use
+using System.Linq;
 
 namespace _010_ForEachIteration
 {
     class Program
     {
+        class EmployeeInfo  // for declared and initialized dictionary below
+        {
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string Department { get; set; }
+        }
+
         static void Main(string[] args)
         {
             Console.Title = "Foreach iteration - arrays & dictionaries";
@@ -43,12 +51,24 @@ namespace _010_ForEachIteration
                 Console.WriteLine($"Key(name): {babyName.Key}, Value(gender): {babyName.Value}");
             }
 
-            Dictionary<string, string> Employees = new Dictionary<string, string>();
-            Employees.Add("Harison", "IT");
-            Employees.Add("William", "HR");
-            Employees.Add("Linda", "COM");
-            Employees.Add("Cynthia", "COM");
-            Employees.Add("Bradly", "ADMIN");
+            Console.WriteLine(); // space in output
+            Console.WriteLine("=== Core Staff ==="); 
+            var employees = new Dictionary<int, EmployeeInfo>() 
+            {
+                { 001, new EmployeeInfo { FirstName="Harison", LastName="Karnik", Department="Director of Information Technology" } },
+                { 002, new EmployeeInfo { FirstName="William", LastName="Spinoza", Department="Asst. Dir. of Information Technology" } },
+                { 003, new EmployeeInfo { FirstName="Bradley", LastName="Wonkov", Department="Director of Communications" } },
+                { 004, new EmployeeInfo { FirstName="Cynthia", LastName="Brockman", Department="Asst. Dir. of Communications" } },
+                { 005, new EmployeeInfo { FirstName="Ruthann", LastName="Zinkler", Department="Director of Human Resources" } },
+                { 006, new EmployeeInfo { FirstName="Angelica", LastName="Hintz", Department="Asst. Dir. of Human Resources" } },
+                { 007, new EmployeeInfo { FirstName="Rachell", LastName="Obermen", Department="Chief Finacial Officer" } },
+                { 008, new EmployeeInfo { FirstName="Debrah", LastName="Hoodisha", Department="Chief Executive Officer" } }
+            };
+
+            foreach(var idx in Enumerable.Range(001, 8))  // Range(start, count) not sure I understand this use of Enumerable
+            {
+                Console.WriteLine($"ID: {idx} is {employees[idx].FirstName} {employees[idx].LastName} and is the {employees[idx].Department}");
+            }
          
         }
     }
