@@ -36,7 +36,12 @@ namespace _010_ForEachIteration
             babyNamesGender.Add("William", "male");
             babyNamesGender.Add("Sophia", "female");
 
+            Console.WriteLine(); // space in output
             Console.WriteLine("=== Baby Names & Gender ===");
+            foreach(KeyValuePair<string, string> babyName in babyNamesGender)
+            {
+                Console.WriteLine($"Key(name): {babyName.Key}, Value(gender): {babyName.Value}");
+            }
 
         }
     }
