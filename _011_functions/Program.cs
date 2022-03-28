@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _011_functions
 {
@@ -31,6 +32,18 @@ namespace _011_functions
             Console.WriteLine($"\tIn Farenheit: {bodyTempF()}{'\u00B0'}F");
             Console.WriteLine($"\tIn Kelvin: {bodyTempK()}{'\u00B0'}K");
 
+            // function/method declared but no initialized values | passing arguments in the parameters
+            static string setUser(string name, int age = 18)  // default age is set in case not age argument is specified for the perameter
+            {
+                string userInfo = $"{name} {age}";
+                return userInfo;
+            }
+            // initialized via passing arguments for the parameters
+            Console.WriteLine();  // space in output
+            Console.WriteLine(setUser("Tina Jorgenson", 42));
+            Console.WriteLine(setUser("Orlanda Willson"));
+
         }
+
     }
 }
