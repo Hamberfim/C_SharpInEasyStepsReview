@@ -43,13 +43,36 @@ namespace _011_functions
             Console.WriteLine(setUser("Tina Jorgenson", 42));
             Console.WriteLine(setUser("Orlanda Willson"));
 
+
+            Console.WriteLine();  // space in output
+            double weight;
+            string number;
+            static string getWeight(out double theWeight)
+            {
+                theWeight = 10;
+                return "ten";
+            }
+
+            static double poundsToKilograms(double pounds = 5)
+            {
+                return (pounds * 0.45359237);
+            }
+
+            static void kgToLb(ref double weight)
+            {
+                weight = (weight / 0.45359237);
+            }
+            number = getWeight(out weight);
+            Console.WriteLine($"{number}lbs = {poundsToKilograms(weight)}Kg");
+            kgToLb(ref weight);
+            Console.WriteLine($"{number}Kg = {weight}lbs");
+
             Console.WriteLine();  // space in output
             static double getAreaDouble(double width, double length)
             {
                 double area = width * length;
                 return area;
             }
-
             Console.WriteLine($"My moving box is {getAreaDouble(2, 3)} inches in area.");
 
             Console.WriteLine();  // space in output
@@ -58,7 +81,6 @@ namespace _011_functions
                 string area = $"My moving box of {width} X {length} inches is {width * length} inches in area.";
                 return area;
             }
-
             double width = 4;
             double length = 6;
             Console.WriteLine(getAreaString(width, length));
