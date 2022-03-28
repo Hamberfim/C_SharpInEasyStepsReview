@@ -43,17 +43,17 @@ namespace _011_functions
             Console.WriteLine(setUser("Tina Jorgenson", 42));
             Console.WriteLine(setUser("Orlanda Willson"));
 
-            ////
+            //// ridiculous book example
             Console.WriteLine();  // space in output
             double weight;
             string number;
-            static string getWeight(out double theWeight)
+            static string getWeight(out double theWeight)  //
             {
                 theWeight = 10;
                 return "Ten";
             }
 
-            static double poundsToKilograms(double pounds = 5)
+            static double poundsToKilograms(double pounds = 5)  // default parameter argument provide in case one isn't declared
             {
                 return (pounds * 0.45359237);
             }
@@ -62,13 +62,14 @@ namespace _011_functions
             {
                 weight = (weight / 0.45359237);
             }
-            number = getWeight(out weight);
+            number = getWeight(out weight);  // 
             Console.WriteLine($"{number} lbs in kilograms is {poundsToKilograms(weight)}Kg");
             kgToLb(ref weight);
             Console.WriteLine($"{number} Kg in pounds is {weight}lbs");
+            //// ridiculous book example
 
 
-            //// 
+            // my example
             Console.WriteLine();  // space in output
             static double getAreaDouble(double width, double length)
             {
