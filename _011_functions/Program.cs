@@ -11,7 +11,7 @@ namespace _011_functions
             // syntax | access-specifier return-data-type method-name (parameters) {statements}
             static void bodyTempC()
             {
-                Console.WriteLine("=== Body Temperate ===");
+                Console.WriteLine("======= Body Temperate =======");
                 Console.WriteLine($"\tIn Centigrade: 37{'\u00B0'}C");  // Windows Alt Code = (char)0176 in ascii OR Unicode escape sequence '\u00B0'
             }
 
@@ -30,7 +30,7 @@ namespace _011_functions
             bodyTempC();
             Console.WriteLine($"\tIn Farenheit: {bodyTempF()}{'\u00B0'}F");
             Console.WriteLine($"\tIn Kelvin: {bodyTempK()}{'\u00B0'}K");
-            Console.WriteLine();
+
         }
     }
 }
