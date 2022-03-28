@@ -53,7 +53,7 @@ namespace _011_functions
                 return "Ten";
             }
 
-            static double poundsToKilograms(double pounds = 5)  // default parameter argument provide in case one isn't declared
+            static double convertPoundsToKilograms(double pounds = 5)  // default parameter argument provide in case one isn't declared
             {
                 return (pounds * 0.45359237);
             }
@@ -62,8 +62,8 @@ namespace _011_functions
             {
                 weight = (weight / 0.45359237);
             }
-            number = setBaseWeight(out weight);  // 
-            Console.WriteLine($"{number} lbs in kilograms is {poundsToKilograms(weight)}Kg");
+            number = setBaseWeight(out weight);  // get base weight for example conversions
+            Console.WriteLine($"{number} lbs in kilograms is {convertPoundsToKilograms(weight)}Kg");
             kgToLb(ref weight);
             Console.WriteLine($"{number} Kg in pounds is {weight}lbs");
             
