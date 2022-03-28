@@ -43,9 +43,17 @@ namespace _011_functions
             Console.WriteLine(setUser("Tina Jorgenson", 42));
             Console.WriteLine(setUser("Orlanda Willson"));
 
+            Console.WriteLine();  // space in output
+            static double getAreaDouble(double width, double length)
+            {
+                double area = width * length;
+                return area;
+            }
+
+            Console.WriteLine($"My moving box is {getAreaDouble(2, 3)} inches in area.");
 
             Console.WriteLine();  // space in output
-            static string getArea(double width, double length)
+            static string getAreaString(double width, double length)
             {
                 string area = $"My moving box of {width} X {length} inches is {width * length} inches in area.";
                 return area;
@@ -53,7 +61,7 @@ namespace _011_functions
 
             double width = 4;
             double length = 6;
-            Console.WriteLine(getArea(width, length));
+            Console.WriteLine(getAreaString(width, length));
 
         }
 
