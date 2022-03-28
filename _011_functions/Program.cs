@@ -101,9 +101,25 @@ namespace _011_functions
 
             Console.WriteLine($"If your birth year is {birthYear} then you are {determineAge(2022, birthYear)}");
 
-            // overloading Methods
+            // overloading Methods - area revisited
             Console.WriteLine();  // space in output
+            static double getArea(double width)
+            {
+                double radius = width / 2;
+                double area = (radius * radius) * 3.141593;
+                return area;
+            }
+            double hatbox = getArea(8);
+            Console.WriteLine($"The area of my circle hat box is {hatbox.ToString("N3")} inches");  // .ToString("N2") - String.Format() pattern
 
+            Console.WriteLine();  // space in output
+            static double areaString(double width, double length)
+            {
+                double area = width * length;
+                return area;
+            }
+            double movingBox = areaString(9, 12);
+            Console.WriteLine($"The area of my moving box is {movingBox.ToString("N3")}");  // .ToString("N2") - String.Format() pattern
 
         }
 
