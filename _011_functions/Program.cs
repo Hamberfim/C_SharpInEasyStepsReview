@@ -47,26 +47,26 @@ namespace _011_functions
             Console.WriteLine();  // space in output
             double weight;
             string number;
-            static string setBaseWeight(out double theWeight)  //
+            static string setBaseWeight(out double theBaseWeight)  //
             {
-                theWeight = 10;
+                theBaseWeight = 10;
                 return "Ten";
             }
 
             static double convertPoundsToKilograms(double pounds = 5)  // default parameter argument provide in case one isn't declared
             {
-                return (pounds * 0.45359237);
+                return (pounds * 0.45359237);  // multiple pounds weight to get value in kilograms
             }
 
-            static void kgToLb(ref double weight)
+            static void convertKilogramsToPounds(ref double weight)
             {
-                weight = (weight / 0.45359237);
+                weight = (weight / 0.45359237);  // divide kilogram weight to get value in pounds
             }
             number = setBaseWeight(out weight);  // get base weight for example conversions
             Console.WriteLine($"{number} lbs in kilograms is {convertPoundsToKilograms(weight)}Kg");
-            kgToLb(ref weight);
+            convertKilogramsToPounds(ref weight);
             Console.WriteLine($"{number} Kg in pounds is {weight}lbs");
-            
+            // end of refactored book example
 
 
             // my example
