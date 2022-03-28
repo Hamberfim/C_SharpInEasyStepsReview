@@ -43,6 +43,18 @@ namespace _011_functions
             Console.WriteLine(setUser("Tina Jorgenson", 42));
             Console.WriteLine(setUser("Orlanda Willson"));
 
+
+            Console.WriteLine();  // space in output
+            static string getArea(double width, double length)
+            {
+                string area = $"My moving box of {width} X {length} inches is {width * length} inches in area.";
+                return area;
+            }
+
+            double width = 4;
+            double length = 6;
+            Console.WriteLine(getArea(width, length));
+
         }
 
     }
