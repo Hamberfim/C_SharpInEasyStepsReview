@@ -12,7 +12,7 @@ namespace _011_functions
             static void bodyTempC()
             {
                 Console.WriteLine("=== Body Temperate ===");
-                Console.WriteLine($"In Centigrade: 37{'\u00B0'}C");  // Windows Alt Code = (char)0176 in ascii OR Unicode escape sequence '\u00B0'
+                Console.WriteLine($"\tIn Centigrade: 37{'\u00B0'}C");  // Windows Alt Code = (char)0176 in ascii OR Unicode escape sequence '\u00B0'
             }
 
             static double bodyTempF()  // method returns floating value for body temp in Farenheit
@@ -28,8 +28,8 @@ namespace _011_functions
             }
 
             bodyTempC();
-            Console.WriteLine($"In Farenheit: {bodyTempF()}{'\u00B0'}F");
-            Console.WriteLine();
+            Console.WriteLine($"\tIn Farenheit: {bodyTempF()}{'\u00B0'}F");
+            Console.WriteLine($"\tIn Kelvin: {bodyTempK()}{'\u00B0'}K");
             Console.WriteLine();
         }
     }
