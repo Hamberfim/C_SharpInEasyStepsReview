@@ -72,7 +72,7 @@ namespace _011_functions
             // end of refactored book example
 
 
-            // my example
+            // simple area function/method
             Console.WriteLine();  // space in output
             static double getAreaDouble(double width, double length)
             {
@@ -90,6 +90,16 @@ namespace _011_functions
             double width = 4;
             double length = 6;
             Console.WriteLine(getAreaString(width, length));
+
+            Console.WriteLine();  // space in output
+            int birthYear = 1966;
+
+            static int determineAge(int currentYear, int outBirthYear)
+            {
+                return currentYear - outBirthYear;
+            }
+
+            Console.WriteLine($"If you birthyear is {birthYear} then you are {determineAge(2022, birthYear)}");
 
         }
 
