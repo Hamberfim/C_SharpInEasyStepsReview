@@ -63,9 +63,9 @@ namespace _011_functions
                 weight = (weight / 0.45359237);  // divide kilogram weight to get value in pounds
             }
             number = setBaseWeight(out weight);  // get base weight for example conversions
-            Console.WriteLine($"{number} lbs in kilograms is {convertPoundsToKilograms(weight)}Kg");
+            Console.WriteLine($"{number} pounds in kilograms is {convertPoundsToKilograms(weight)}Kg");
             convertKilogramsToPounds(ref weight);
-            Console.WriteLine($"{number} Kg in pounds is {weight}lbs");
+            Console.WriteLine($"{number} kilograms in pounds is {weight}lbs");
             // end of refactored book example
 
 
