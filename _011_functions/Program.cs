@@ -47,7 +47,10 @@ namespace _011_functions
             Console.WriteLine();  // space in output
             double weight;
             string number;
-            static string setBaseWeight(out double theBaseWeight)  //
+            // Arguments passed by value - changes inside the method DO NOT affect the original external values
+            // Arguments passed by reference - changes inside the method DO affect the original external values
+            // Arguments passed via 'out' keyword are able to return more than one value and pass from the method rather than to the method and behave like reference types
+            static string setBaseWeight(out double theBaseWeight)  
             {
                 theBaseWeight = 10;
                 return "Ten";
@@ -58,7 +61,7 @@ namespace _011_functions
                 return (pounds * 0.45359237);  // multiple pounds weight to get value in kilograms
             }
 
-            static void convertKilogramsToPounds(ref double weight)
+            static void convertKilogramsToPounds(ref double weight)  
             {
                 weight = (weight / 0.45359237);  // divide kilogram weight to get value in pounds
             }
@@ -87,8 +90,6 @@ namespace _011_functions
             double width = 4;
             double length = 6;
             Console.WriteLine(getAreaString(width, length));
-
-
 
         }
 
