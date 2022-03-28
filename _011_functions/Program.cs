@@ -99,7 +99,7 @@ namespace _011_functions
                 return currentYear - outBirthYear;
             }
 
-            Console.WriteLine($"If you birthyear is {birthYear} then you are {determineAge(2022, birthYear)}");
+            Console.WriteLine($"If your birth year is {birthYear} then you are {determineAge(2022, birthYear)}");
 
             // overloading Methods
             Console.WriteLine();  // space in output
