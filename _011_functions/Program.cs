@@ -121,6 +121,13 @@ namespace _011_functions
             double movingBox = areaString(9, 12);
             Console.WriteLine($"The area of my moving box is {movingBox.ToString("N3")}");  // .ToString("N2") - String.Format() pattern
 
+            Console.WriteLine();  // space in output
+            Console.WriteLine("Plase Enter your dimensions: ");
+            double measurement = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"The area of a circle is {measurement.ToString("N3")} inches");
+            double box = areaString(measurement, measurement);
+            Console.WriteLine($"The area of a box is {box.ToString("N3")}");
+
         }
 
     }
