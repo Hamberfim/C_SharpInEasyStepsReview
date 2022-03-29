@@ -35,12 +35,12 @@ namespace _012_RefactoringCode
             {
                 while(number <= maximum)
                 {
-                    Console.WriteLine($"Factorial of {number}: {factorial(number)}");
+                    Console.WriteLine($"Factorial of {number} is {factorial(number)}");  // calls factorial method
                     number++;
                 }
             }
 
-            // call method
+            // call computeFactorials method
             computeFactorials(1, 10);
 
         }
