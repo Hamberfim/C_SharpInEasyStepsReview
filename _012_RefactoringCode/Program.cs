@@ -35,7 +35,7 @@ namespace _012_RefactoringCode
             {
                 while(number <= maximum)
                 {
-                    Console.WriteLine($"Factorial of {number} is {factorial(number)}");  // calls factorial method
+                    Console.WriteLine($"Factorial of {number} is {factorial(number)}. (i.e., = {number}*{factorial(number)/number})");  // calls factorial method above
                     number++;
                 }
             }
