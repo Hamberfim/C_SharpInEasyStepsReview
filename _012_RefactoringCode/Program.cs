@@ -15,7 +15,7 @@ namespace _012_RefactoringCode
             // }
 
             // recursive method to return the factorial value of an integer -
-            // i.e., each consecutive number is multipled by the previous product. (1*1=1; 1*2=2; 2*3=6; 6*4=24; 24*5=120; 120*6=720; 720*7=5040, etc.)
+            // i.e., each consecutive number is multipled by the previous product. (1*1=1; 2*1=2; 3*2=6; 4*6=24; 5*24=120; 6*120=720; 7*720=5040, etc.)
             static int factorial(int number)
             {
                 int result;
@@ -35,7 +35,8 @@ namespace _012_RefactoringCode
             {
                 while(number <= maximum)
                 {
-                    Console.WriteLine($"Factorial of {number} is {factorial(number)}. (Why? {number}*{factorial(number)/number}={factorial(number)})");  // calls factorial method above
+                    // calls factorial method above
+                    Console.WriteLine($"Factorial of {number} is {factorial(number)}. (Why? {number}*{factorial(number)/number}={factorial(number)})");
                     number++;
                 }
             }
