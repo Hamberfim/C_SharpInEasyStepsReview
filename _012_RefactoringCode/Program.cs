@@ -31,7 +31,17 @@ namespace _012_RefactoringCode
             }
 
             // display factorial range values via loop
+            static void computeFactorials(int number, int maximum)
+            {
+                while(number <= maximum)
+                {
+                    Console.WriteLine($"Factorial of {number}: {factorial(number)}");
+                    number++;
+                }
+            }
 
+            // call method
+            computeFactorials(1, 10);
 
         }
     }
