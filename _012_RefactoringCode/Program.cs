@@ -30,6 +30,9 @@ namespace _012_RefactoringCode
                 return result;
             }
 
+            // display factorial range values via loop
+
+
         }
     }
 }
