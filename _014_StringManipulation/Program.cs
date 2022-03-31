@@ -23,10 +23,16 @@ namespace _014_StringManipulation
             userText = userText.ToLower();
             Console.WriteLine($"Lowercase: \n\t{userText}");
 
-
             Console.WriteLine();  // space in output
+            string userTextPleft = userText.PadLeft(50);
+            Console.WriteLine($"Padded Left:\t '{userTextPleft}'");
+            string userTextPright = userText.PadRight(50, '#');
+            Console.WriteLine($"Padded Right:\t '{userTextPright}'");
+            string userTextPboth = userText.PadLeft(30, '*').PadRight(40, '*');
+            Console.WriteLine($"Padded Both:\t '{userTextPboth}'");
 
-
+            Console.WriteLine($"Trimmed Start:\t '{userTextPleft.TrimStart()}'");
+            Console.WriteLine($"Trimmed End:\t '{userTextPboth.TrimEnd()}'");
 
         }
     }
