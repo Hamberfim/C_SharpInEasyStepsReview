@@ -28,7 +28,7 @@ namespace _014_StringManipulation
             Console.WriteLine($"Padded Left:\t '{userTextPleft}'");
             string userTextPright = userText.PadRight(50, '#');
             Console.WriteLine($"Padded Right:\t '{userTextPright}'");
-            string userTextPboth = userText.PadLeft(30, '*').PadRight(40, '*');
+            string userTextPboth = userText.PadLeft(30, '*').PadRight(40, '*');  // ??? doesn't seem to have an affect ???
             Console.WriteLine($"Padded Both:\t '{userTextPboth}'");
 
             Console.WriteLine($"Trimmed Start:\t '{userTextPleft.TrimStart()}'");
