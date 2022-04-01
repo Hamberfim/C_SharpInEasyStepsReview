@@ -33,6 +33,21 @@ namespace _016_CopySwapStrings
             // remove the end of the string
             truck2 = truck2.Remove(8);
             Console.WriteLine($"Remove index position 8 of the string (truck2 = truck2.Remove(8);): {truck2}");
+            Console.WriteLine();  // space in output
+
+            // insert two string in the empty original string
+            emptyStrVar = "";
+            emptyStrVar = emptyStrVar.Insert(0, "FirstString ");  // 12 char spaces
+            emptyStrVar = emptyStrVar.Insert(12, "LastString");
+            Console.WriteLine($"Inserted string: {emptyStrVar}");
+
+            // replace
+            Console.WriteLine();  // space in output
+            emptyStrVar = emptyStrVar.Replace("FirstString", "We are at the beginning,");
+            emptyStrVar = emptyStrVar.Replace("LastString", "We are at the end.");
+            Console.WriteLine($"Replaced string: {emptyStrVar}");
+
+
 
 
         }
