@@ -30,6 +30,11 @@ namespace _016_CopySwapStrings
             }
             Console.WriteLine();  // space in output
 
+            // remove the end of the string
+            truck2 = truck2.Remove(8);
+            Console.WriteLine($"Remove index position 8 of the string (truck2 = truck2.Remove(8);): {truck2}");
+
+
         }
     }
 }
