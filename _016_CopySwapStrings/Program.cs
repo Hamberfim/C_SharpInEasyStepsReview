@@ -14,8 +14,11 @@ namespace _016_CopySwapStrings
             Console.WriteLine($"Original strings: truck1={truck1}, truck2={truck2}, emptyStrVar={emptyStrVar}");
 
             Console.WriteLine();  // space in output
-            emptyStrVar = String.Copy(truck2);
+            emptyStrVar = String.Copy(truck2);  // Starting with .NET Core 3.0, this method is obsolete
             Console.WriteLine($"Copy string (emptyStrVar = String.Copy(truck2)): truck1={truck1}, truck2={truck2}, emptyStrVar={emptyStrVar}");
+
+            emptyStrVar = truck1;  // straight forward
+            Console.WriteLine($"Copy string (emptyStrVar = truck1;): truck1={truck1}, truck2={truck2}, emptyStrVar={emptyStrVar}");
         }
     }
 }
