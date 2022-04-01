@@ -11,6 +11,7 @@ namespace _016_CopySwapStrings
             string truck2 = "Dodge Ram";
             string emptyStrVar = "";
 
+            Console.WriteLine($"Original strings: truck1={truck1}, truck2={truck2}, emptyStrVar{emptyStrVar}");
 
             Console.WriteLine();  // space in output
         }
