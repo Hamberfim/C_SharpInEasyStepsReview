@@ -24,8 +24,11 @@ namespace _016_CopySwapStrings
             int truck2Length = truck2.Length;
             char[] model = new char[truck2Length];  // char array length is now dynamic
             truck2.CopyTo(0, model, 0, truck2Length);  // space seperated list of the character array
-
-
+            foreach(char c in model)
+            {
+                Console.Write($"{c} ");
+            }
+            Console.WriteLine();  // space in output
 
         }
     }
