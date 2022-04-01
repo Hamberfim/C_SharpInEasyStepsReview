@@ -22,7 +22,10 @@ namespace _016_CopySwapStrings
 
             Console.WriteLine();  // space in output
             int truck2Length = truck2.Length;
-            char[] model = new char[truck2Length];  // length is now dynamic
+            char[] model = new char[truck2Length];  // char array length is now dynamic
+            truck2.CopyTo(0, model, 0, truck2Length);  // space seperated list of the character array
+
+
 
         }
     }
