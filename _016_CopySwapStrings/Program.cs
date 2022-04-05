@@ -48,8 +48,6 @@ namespace _016_CopySwapStrings
             Console.WriteLine($"Replaced string: {emptyStrVar}");
 
 
-
-
         }
     }
 }
