@@ -7,10 +7,13 @@ namespace MvcMovie.Controllers
     {
         // 
         // GET: /HelloWorld/
-
-        public string Index(string name = "Guest", int ID = -1)
+        // public string Index(string name = "Guest", int ID = -1)
+        // {
+        //     return ($"Hello {name}, ID: {ID}.");
+        // }
+        public IActionResult Index()
         {
-            return ($"Hello {name}, ID: {ID}.");
+            return View();
         }
 
         //Requires using System.Text.Encodings.Web;
