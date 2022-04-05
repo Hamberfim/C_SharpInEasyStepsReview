@@ -8,7 +8,7 @@ namespace _017_FindSubStrings
         {
             Console.Title = "Find SubStrings";
 
-            string txtToSearch = "My dog Sukha is cute but stinky.";
+            string txtToSearch = "My dog Sukha is cute but stinky. Also, cute may be an exageration.";
 
             static void report(int position, string substr)
             {
@@ -23,6 +23,8 @@ namespace _017_FindSubStrings
             }
 
             Console.WriteLine($"The current text \n\t{txtToSearch} \nis {txtToSearch.Length} characters in length.");
+
+            txtToSearch = txtToSearch.ToLower();
 
             Console.WriteLine();  // space in output
             Console.WriteLine("Enter a substring to search for: ");
@@ -45,13 +47,13 @@ namespace _017_FindSubStrings
 
             Console.WriteLine();  // space in output
 
-            // find first of any occurance of in the usrSubStr Array
+            // find first of any occurance of in the usrSubStr character Array
             position = txtToSearch.IndexOfAny(usrCharArray);
             report(position, txtToSearch.Substring(position, 1));
 
             Console.WriteLine();  // space in output
 
-            // find last of any occurance of in the usrSubStr Array
+            // find last of any occurance of in the usrSubStr character Array
             position = txtToSearch.LastIndexOfAny(usrCharArray);
             report(position, txtToSearch.Substring(position, 1));
 
