@@ -14,10 +14,10 @@ namespace _017_FindSubStrings
             {
                 if(position != -1)
                 {
-                    Console.WriteLine($"'{substr}' found at {position}");
+                    Console.WriteLine($"'{substr}' is found at {position}");
                 }else
                 {
-                    Console.WriteLine($"'{substr}' not found.");
+                    Console.WriteLine($"'{substr}' is not found.");
                 }
                 
             }
