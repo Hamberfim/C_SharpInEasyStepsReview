@@ -10,9 +10,11 @@ namespace _021_FormatingStrings
             double numericAmount = 25000;
 
             // concat String "Format" method as currency example 
-            Console.WriteLine("String ToString format as Currency : " + numericAmount.ToString("C"));
-            // using placeholders
-            Console.WriteLine("String format as Currency using placeholder: {0:C}" + numericAmount);
+            Console.WriteLine("String ToString 'Format' as Currency : " + numericAmount.ToString("C"));
+            // String "Format" method as currency using placeholders
+            Console.WriteLine("String 'Format' as Currency using placeholder: {0:C}" + numericAmount);
+            // String "Format" method as currency using string interpolation
+            Console.WriteLine($"String 'Format' method as currency using string interpolation {numericAmount:C}");
 
 
 
