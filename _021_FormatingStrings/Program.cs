@@ -11,15 +11,15 @@ namespace _021_FormatingStrings
             double pi = 3.14159265359;
             double perecentNum = .56;
 
-            // concat String "Format" method as currency example 
+            // concat ToString "Format" method as currency example 
             Console.WriteLine("String ToString 'Format' as Currency : " + numericAmount.ToString("C"));
             Console.WriteLine("String ToString 'Format' as Fixed Point (11 decimal places): " + pi.ToString("F11"));
             Console.WriteLine();  // space in output
 
-            // String "Format" method as currency using placeholders/position values
-            Console.WriteLine("String 'Format' as Currency using placeholder: {0:C}", numericAmount);
-            Console.WriteLine("String 'Format' as Fixed Point using placeholder: {0:F4}", pi);
-            Console.WriteLine("String 'Format' using placeholder (multiple items): {0:F4}, {1:C}", pi, numericAmount);
+            // String "Format" method (String.Format()) as currency using placeholders/position values
+            Console.WriteLine(String.Format("String 'Format' as Currency using placeholder: {0:C}", numericAmount));
+            Console.WriteLine(String.Format("String 'Format' as Fixed Point using placeholder: {0:F4}", pi));
+            Console.WriteLine(String.Format("String 'Format' using placeholder (multiple items): {0:F4}, {1:C}", pi, numericAmount));
             Console.WriteLine(String.Format("String 'Format' using placeholder With Zero Padding Format: {0:00.0000}", numericAmount));
             Console.WriteLine();  // space in output
 
@@ -49,9 +49,11 @@ namespace _021_FormatingStrings
             {
                 Console.WriteLine($"{@names[i]} is having a Birthday this month.");
             }
+            Console.WriteLine();  // space in output
 
-            //
-
+            // date format with String.Formt() method
+            DateTime now = DateTime.Now;
+            Console.WriteLine($"Current date and time: {now}.");
 
             Console.WriteLine();  // space in output
 
