@@ -6,7 +6,7 @@ namespace _021_FormatingStrings
     {
         static void Main(string[] args)
         {
-            Console.Title = "String Formatting";
+            Console.Title = "String & Date Formatting";
             double numericAmount = 25000;
             double pi = 3.14159265359;
             double perecentNum = .56;
@@ -43,13 +43,14 @@ namespace _021_FormatingStrings
             }
             Console.WriteLine();  // space in output
 
-            // using verbatim identifier
+            // using the '@' verbatim identifier
             string[] @names = {"Bill", "Jimmy", "Carol", "Sammy"};
             for (int i = 0; i < names.Length; i++)
             {
                 Console.WriteLine($"{@names[i]} is having a Birthday this month.");
             }
 
+            //
 
 
             Console.WriteLine();  // space in output
