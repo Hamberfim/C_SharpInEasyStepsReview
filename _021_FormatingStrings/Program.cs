@@ -54,6 +54,7 @@ namespace _021_FormatingStrings
             // date format with String.Formt() method
             DateTime now = DateTime.Now;
             Console.WriteLine($"Current date and time: {now}.");
+            Console.WriteLine($"Day name: {now.DayOfWeek}.");
 
             Console.WriteLine();  // space in output
 
