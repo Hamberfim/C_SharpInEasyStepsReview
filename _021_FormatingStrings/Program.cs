@@ -55,10 +55,16 @@ namespace _021_FormatingStrings
             DateTime now = DateTime.Now;
             Console.WriteLine($"Current date and time: {now}.");
             Console.WriteLine($"Day name: {now.DayOfWeek}.");
-
-            Console.WriteLine();  // space in output
-
-
+            Console.WriteLine($"Date Only: {now.ToShortDateString()}.");
+            Console.WriteLine($"Time Only: {now.ToShortTimeString()}.");
+            DateTime Plus3years = now.AddYears(3);
+            Console.WriteLine($"Future date in 3 years: {Plus3years}.");
+            DateTime setDT = new DateTime(1966, 4, 3, 7, 15, 30);
+            Console.WriteLine($"Set date and time: {setDT}.");
+            Console.WriteLine($"Set date and time (long format): {setDT:f}.");
+            Console.WriteLine($"Day Name: {setDT:dddd}.");
+            Console.WriteLine($"Long Date: {setDT:D}.");
+            Console.WriteLine($"Long Time: {setDT:T}.");
 
         }
     }
