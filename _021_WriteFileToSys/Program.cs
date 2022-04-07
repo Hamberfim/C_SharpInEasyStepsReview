@@ -6,7 +6,7 @@ namespace _021_WriteFileToSys
     {
         static void Main(string[] args)
         {
-            Console.Title = "Writting a file to the system.";
+            Console.Title = "Writting a text file to the system.";
 
             Console.WriteLine();  // Space in output
         }
