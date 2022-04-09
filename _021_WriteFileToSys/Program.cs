@@ -67,6 +67,16 @@ namespace _021_WriteFileToSys
             {
                 File.WriteAllText(getFilePath, SaraTeasdale);
                 Console.WriteLine($"File written to: {getFilePath}");
+
+                // read file and output contents
+                string[] lines = File.ReadAllLines(getFilePath);
+                Console.WriteLine(" === File Output === ");
+                foreach (var line in lines)
+                {
+                    Console.WriteLine("\t" + line);
+                }
+
+                Console.WriteLine();  // Space in output
             }
             catch (Exception error)
             {
@@ -75,13 +85,7 @@ namespace _021_WriteFileToSys
 
             Console.WriteLine();  // Space in output
 
-            // read file and output contents
-            string[] lines = File.ReadAllLines(getFilePath);
-            Console.WriteLine(" === File Output === ");
-            foreach (var line in lines)
-            {
-                Console.WriteLine("\t" + line);
-            }
+            
 
         }
     }
