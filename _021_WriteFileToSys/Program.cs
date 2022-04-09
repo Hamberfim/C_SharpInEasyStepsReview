@@ -9,11 +9,6 @@ namespace _021_WriteFileToSys
         {
             Console.Title = "Writting a text file to the system.";
 
-            // set local path to dir and file
-            string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string sourceFile = Path.Combine(currentDirectory, @"..\..\..\sourceDocs\fileToReadWrite.txt");
-            string getFilePath = Path.GetFullPath(sourceFile);
-
             // text to use to write to file  - \r\n carrage return and new line
             string SaraTeasdale = "\r\nPEACE";
 
@@ -42,15 +37,31 @@ namespace _021_WriteFileToSys
 
             SaraTeasdale += "\r\nSara Teasdale  1884 - 1933 American";
 
+            // set local path to dir and file
+            string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string sourceFile = Path.Combine(currentDirectory, @"..\..\..\sourceDocs\fileToReadWrite.txt");
+            string getFilePath = Path.GetFullPath(sourceFile);
+
+
             // check for file at path location - display path to file - Found/Not Found
             if (File.Exists(getFilePath))
             {
                 Console.WriteLine($"The file exists at: {getFilePath}.");
+                // read file and output contents
+                string[] fileContents = File.ReadAllLines(getFilePath);
+                Console.WriteLine(" === File Output === ");
+                foreach (var line in fileContents)
+                {
+                    Console.WriteLine("\t" + line);
+                }
+                
+                
             }
             else
             {
                 Console.WriteLine($"File NOT FOUND at: {getFilePath}.");
             }
+            Console.WriteLine();  // Space in output
 
             try
             {
@@ -62,8 +73,16 @@ namespace _021_WriteFileToSys
                 Console.WriteLine($"ERROR!  {error.Message}");
             }
 
-
             Console.WriteLine();  // Space in output
+
+            // read file and output contents
+            string[] lines = File.ReadAllLines(getFilePath);
+            Console.WriteLine(" === File Output === ");
+            foreach (var line in lines)
+            {
+                Console.WriteLine("\t" + line);
+            }
+
         }
     }
 }
