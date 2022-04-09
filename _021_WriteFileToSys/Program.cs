@@ -55,7 +55,6 @@ namespace _021_WriteFileToSys
                     Console.WriteLine("\t" + line);
                 }
                 
-                
             }
             else
             {
@@ -63,8 +62,10 @@ namespace _021_WriteFileToSys
             }
             Console.WriteLine();  // Space in output
 
+            // try/catch
             try
             {
+                // write to file
                 File.WriteAllText(getFilePath, SaraTeasdale);
                 Console.WriteLine($"File written to: {getFilePath}");
 
@@ -77,6 +78,7 @@ namespace _021_WriteFileToSys
                 }
 
                 Console.WriteLine();  // Space in output
+
             }
             catch (Exception error)
             {
@@ -84,8 +86,6 @@ namespace _021_WriteFileToSys
             }
 
             Console.WriteLine();  // Space in output
-
-            
 
         }
     }
