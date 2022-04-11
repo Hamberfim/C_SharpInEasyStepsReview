@@ -18,7 +18,7 @@ namespace _022_appendFile
             // appending content
             string appendBerry = "";
             appendBerry += "\r\n";
-            appendBerry += "\r\n...apended content...";
+            appendBerry += "\r\n...appended content...";
             appendBerry += "\r\n";
             appendBerry += "\r\n";
             appendBerry += "\r\n\tThe Peace of Wild Things by Wendall Berry";
