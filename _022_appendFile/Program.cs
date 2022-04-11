@@ -50,12 +50,22 @@ namespace _022_appendFile
             try
             {
                 File.WriteAllText(getFilePath, wendallBerry);
-            }
-            catch (Exception)
-            {
+                Console.WriteLine($"Title and author written to file at: {getFilePath}");
+                // read file and output contents
+                string[] lines = File.ReadAllLines(getFilePath);
+                Console.WriteLine(" === File Output === ");
+                foreach (var line in lines)
+                {
+                    Console.WriteLine("\t" + line);
+                }
 
-                throw;
+                Console.WriteLine();  // Space in output
             }
+            catch (Exception error)
+            {
+                Console.WriteLine($"ERROR!  {error.Message}");
+            }
+            Console.WriteLine();  // Space in output
 
         }
     }
