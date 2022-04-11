@@ -14,7 +14,8 @@ namespace _022_appendFile
 
             // appending content
             string[] appendBerry = new string[]
-            {   "\r\n",
+            {   "\r\nThe Peace of Wild Things by Wendall Berry",
+                "\r\n",
                 "\r\nWhen despair for the world grows in me",
                 "\r\nand I wake in the night at the least sound",
                 "\r\nin fear of what my life and my children’s lives may be,",
