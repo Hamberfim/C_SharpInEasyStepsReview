@@ -10,7 +10,7 @@ namespace _022_appendFile
             Console.Title = "Append/Write file";
 
             string wendallBerry = "\tThe Peace of Wild Things";
-            wendallBerry += "\tby Wendall Berry";
+            wendallBerry += "\r\n\tby Wendall Berry";
 
             // appending content
             string[] appendBerry = new string[]
