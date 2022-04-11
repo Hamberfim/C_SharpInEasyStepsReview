@@ -9,13 +9,13 @@ namespace _022_appendFile
         {
             Console.Title = "Append/Write file";
 
-            string[] wendallBerryStrArr = new string[]
+            string[] wendallBerryStrArr = new string[]  // will use File.WriteAllLines -  no need for carrage reurns or new lines
             {
                 "\tThe Peace of Wild Things",
                 "\tby Wendall Berry"
             };
 
-            // appending content
+            // appending content - will use File.AppendAllText - need carrage returns and new lines
             string appendBerry = "";
             appendBerry += "\r\n";
             appendBerry += "\r\n...appended content...";
