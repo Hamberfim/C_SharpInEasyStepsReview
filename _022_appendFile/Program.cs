@@ -14,21 +14,27 @@ namespace _022_appendFile
 
             // appending content
             string[] appendBerry = new string[]
-            {   "\r\nThe Peace of Wild Things by Wendall Berry",
-                "\r\n",
-                "\r\nWhen despair for the world grows in me",
-                "\r\nand I wake in the night at the least sound",
-                "\r\nin fear of what my life and my children’s lives may be,",
-                "\r\nrests in his beauty on the water, and the great heron feeds.",
-                "\r\n",
-                "\r\nI come into the peace of wild things",
-                "\r\nwho do not tax their lives with forethought of grief.",
-                "\r\nI come into the presence of still water.",
-                "\r\n",
-                "\r\nAnd I feel above me the day-blind stars waiting with their light. ",
-                "\r\nFor a time I rest in the grace of the world, and am free.",
-                "\r\n",
-                "\r\nCopyright (c) 2012 by Wendell Berry."
+            {
+                "",
+                "",
+                "...apended content...",
+                "",
+                "",
+                "The Peace of Wild Things by Wendall Berry",
+                "",
+                "When despair for the world grows in me",
+                "and I wake in the night at the least sound",
+                "in fear of what my life and my children’s lives may be,",
+                "rests in his beauty on the water, and the great heron feeds.",
+                "",
+                "I come into the peace of wild things",
+                "who do not tax their lives with forethought of grief.",
+                "I come into the presence of still water.",
+                "",
+                "And I feel above me the day-blind stars waiting with their light. ",
+                "For a time I rest in the grace of the world, and am free.",
+                "",
+                "Copyright (c) 2012 by Wendell Berry."
             };
 
             // set path to file
@@ -36,7 +42,7 @@ namespace _022_appendFile
             string sourcePath = Path.Combine(currentDir, @"..\..\..\sourceDir\appendTextFile.txt");
             string getFilePath = Path.GetFullPath(sourcePath);
 
-            // test if file exists
+            // test if file exists only
             if (File.Exists(getFilePath)) 
             {
                 Console.WriteLine($"The file exists at: {getFilePath}.");
@@ -47,7 +53,7 @@ namespace _022_appendFile
             }
             Console.WriteLine();  //  Space in output
 
-            // try/catch write 'title and by'
+            // try/catch write string (WriteAllText) 'title and by'
             try
             {
                 File.WriteAllText(getFilePath, wendallBerry);  // writes string text
@@ -68,10 +74,10 @@ namespace _022_appendFile
             }
             Console.WriteLine();  // Space in output
 
-            // try/catch append content to file
+            // try/catch append string array (WriteAllLines) content to file
             try
             {
-                File.WriteAllLines(getFilePath, appendBerry);  // write string array lins
+                File.WriteAllLines(getFilePath, appendBerry);  // write string array lines
                 Console.WriteLine($"Appended content to file at: {getFilePath}");
                 // read file and output contents
                 string[] lines = File.ReadAllLines(getFilePath);
