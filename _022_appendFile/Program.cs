@@ -67,6 +67,27 @@ namespace _022_appendFile
             }
             Console.WriteLine();  // Space in output
 
+            // try/catch append content to file
+            try
+            {
+                File.WriteAllText(getFilePath, appendBerry);
+                Console.WriteLine($"Appended content to file at: {getFilePath}");
+                // read file and output contents
+                string[] lines = File.ReadAllLines(getFilePath);
+                Console.WriteLine(" === File Output === ");
+                foreach (var line in lines)
+                {
+                    Console.WriteLine("\t" + line);
+                }
+
+                Console.WriteLine();  // Space in output
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine($"ERROR!  {error.Message}");
+            }
+            Console.WriteLine();  // Space in output
+
         }
     }
 }
