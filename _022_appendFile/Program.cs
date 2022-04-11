@@ -46,37 +46,9 @@ namespace _022_appendFile
             if (File.Exists(getFilePath)) 
             {
                 Console.WriteLine($"The file exists at: {getFilePath}.");
-            }
-            else
-            {
-                Console.WriteLine($"File Not Found at {getFilePath}.");
-            }
-            Console.WriteLine();  //  Space in output
 
-            // try/catch write string (WriteAllText) 'title and by'
-            try
-            {
-                File.WriteAllText(getFilePath, wendallBerry);  // writes string text
-                Console.WriteLine($"Title and author written to file at: {getFilePath}");
-                // read file and output contents
-                string[] lines = File.ReadAllLines(getFilePath);
-                Console.WriteLine(" === File Output === ");
-                foreach (var line in lines)
-                {
-                    Console.WriteLine("\t" + line);
-                }
+                // Append string array (WriteAllLines) content to file
 
-                Console.WriteLine();  // Space in output
-            }
-            catch (Exception error)
-            {
-                Console.WriteLine($"ERROR!  {error.Message}");
-            }
-            Console.WriteLine();  // Space in output
-
-            // try/catch append string array (WriteAllLines) content to file
-            try
-            {
                 File.WriteAllLines(getFilePath, appendBerry);  // write string array lines
                 Console.WriteLine($"Appended content to file at: {getFilePath}");
                 // read file and output contents
@@ -89,11 +61,31 @@ namespace _022_appendFile
 
                 Console.WriteLine();  // Space in output
             }
-            catch (Exception error)
+            else
             {
-                Console.WriteLine($"ERROR!  {error.Message}");
+                Console.WriteLine($"File Not Found at {getFilePath}.");
+
+                // try/catch write string (WriteAllText) 'title and by'
+                try
+                {
+                    File.WriteAllText(getFilePath, wendallBerry);  // writes string text
+                    Console.WriteLine($"Title and author written to file at: {getFilePath}");
+                    // read file and output contents
+                    string[] lines = File.ReadAllLines(getFilePath);
+                    Console.WriteLine(" === File Output === ");
+                    foreach (var line in lines)
+                    {
+                        Console.WriteLine("\t" + line);
+                    }
+
+                    Console.WriteLine();  // Space in output
+                }
+                catch (Exception error)
+                {
+                    Console.WriteLine($"ERROR!  {error.Message}");
+                }
             }
-            Console.WriteLine();  // Space in output
+            Console.WriteLine();  //  Space in output
 
         }
     }
