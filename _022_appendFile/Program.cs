@@ -30,16 +30,15 @@ namespace _022_appendFile
             appendBerry += "\r\n";
             appendBerry += "\r\nCopyright (c) 2012 by Wendell Berry";
 
-
             // set path to file
             string currentDir = AppDomain.CurrentDomain.BaseDirectory;
             string sourcePath = Path.Combine(currentDir, @"..\..\..\sourceDir\appendTextFile.txt");
             string getFilePath = Path.GetFullPath(sourcePath);
 
-
             // test if file exists
-            if (File.Exists(getFilePath)) { 
-            
+            if (File.Exists(getFilePath)) 
+            {
+                Console.WriteLine($"The file exists at: {getFilePath}.");
             }
             else
             {
