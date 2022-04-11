@@ -49,7 +49,7 @@ namespace _022_appendFile
             // try/catch write 'title and by'
             try
             {
-                File.WriteAllText(getFilePath, wendallBerry);
+                File.WriteAllText(getFilePath, wendallBerry);  // writes string text
                 Console.WriteLine($"Title and author written to file at: {getFilePath}");
                 // read file and output contents
                 string[] lines = File.ReadAllLines(getFilePath);
@@ -70,7 +70,7 @@ namespace _022_appendFile
             // try/catch append content to file
             try
             {
-                File.WriteAllText(getFilePath, appendBerry);
+                File.WriteAllLines(getFilePath, appendBerry);  // write string array lins
                 Console.WriteLine($"Appended content to file at: {getFilePath}");
                 // read file and output contents
                 string[] lines = File.ReadAllLines(getFilePath);
