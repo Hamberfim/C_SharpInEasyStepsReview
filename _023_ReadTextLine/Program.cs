@@ -21,7 +21,9 @@ namespace _023_ReadTextLine
                 // try read
                 try
                 {
-
+                    string readText = File.ReadAllText(getFilePath);
+                    Console.WriteLine($"File Read {getFilePath} \n");
+                    Console.WriteLine($"{readText}\n");
                 }
                 catch (Exception error)
                 {
