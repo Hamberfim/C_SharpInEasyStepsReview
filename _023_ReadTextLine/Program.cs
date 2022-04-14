@@ -14,16 +14,31 @@ namespace _023_ReadTextLine
             string sourcePath = Path.Combine(currentDir, @"..\..\..\sourceDir\ReadTextLine.txt");
             string getFilePath = Path.GetFullPath(sourcePath);
 
+            // check for existing file
             if(File.Exists(getFilePath))
             {
                 Console.WriteLine($"Found file at: {getFilePath}.");
 
-                // try read
+                // try/catch read
                 try
                 {
+                    // read the text
                     string readText = File.ReadAllText(getFilePath);
                     Console.WriteLine($"File Read {getFilePath} \n");
+                    // output text line by line
                     Console.WriteLine($"{readText}\n");
+
+                    // read the lines of the text doc
+                    string [] lines = File.ReadAllLines(getFilePath);
+                    // counter
+                    int count = 1;
+                    foreach (var line in lines)
+                    {
+                        // output each line with a line number
+                        Console.WriteLine($"{count}: {line}");
+                        count++;
+                    }
+
                 }
                 catch (Exception error)
                 {
