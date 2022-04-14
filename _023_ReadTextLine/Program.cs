@@ -28,6 +28,8 @@ namespace _023_ReadTextLine
                     // output text line by line
                     Console.WriteLine($"{readText}\n");
 
+                    Console.WriteLine();  // space in output
+
                     // read the lines of the text doc
                     string [] lines = File.ReadAllLines(getFilePath);
                     // counter
