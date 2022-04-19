@@ -17,6 +17,7 @@ namespace _24_StreamingLines
             // text to work with... a selection from Brave New World Aldous Huxley
             string[] brave = new string[]
             {
+                "\t\r\n",  // push the text down into the page a couple of lines
                 "\tThe door of the lighthouse was ajar.", 
                 "\tThey pushed it open and walked into a shuttered twilight.",
                 "\tThrough an archway on the further side of the room they could see the bottom of the staircase that led up to the higher floors.", 
