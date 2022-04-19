@@ -25,33 +25,30 @@ namespace _24_StreamingLines
 
             string attrib = "\r\n\tBrave New World (Aldous Huxley 1931)";
 
-
-            if (File.Exists(getFilePath))
+            // try/catch to write and append file stream
+            try
             {
-                try
+                // StreamWriter name = new StreamWriter(PATH);
+                // using construct - write file
+                using (StreamWriter writer = new StreamWriter(getFilePath))
                 {
-                    // StreamWriter name = new StreamWriter(PATH);
-                    // using construct - write file
-                    using (StreamWriter writer = new StreamWriter(getFilePath))
+                    foreach (string line in brave)
                     {
-                        foreach (string line in brave)
-                        {
-                            writer.WriteLine(line);
-                        }
+                        writer.WriteLine(line);
                     }
-
-                    // append
-                    using (StreamWriter writer = new StreamWriter(getFilePath, true))
-                    {
-                        writer.WriteLine(attrib);
-                        Console.WriteLine($"File written and appended: {getFilePath}");
-                    }
-
                 }
-                catch (Exception error)
+
+                // append
+                using (StreamWriter writer = new StreamWriter(getFilePath, true))
                 {
-                    Console.WriteLine(error.Message);
+                    writer.WriteLine(attrib);
+                    Console.WriteLine($"File written and appended: {getFilePath}");
                 }
+
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine(error.Message);
             }
 
 
