@@ -52,6 +52,15 @@ namespace _24_StreamingLines
                 Console.WriteLine(error.Message);
             }
 
+            // another append 
+            string appending = "\r\n\tFile created by C# program - adhamlin";
+
+            // using constructor
+            using (StreamWriter writer = new StreamWriter(getFilePath, true))
+            {
+                writer.WriteLine(appending);
+                Console.WriteLine($"File written and appended: {getFilePath}");
+            }
 
             Console.WriteLine();  // space in outut
 
