@@ -24,7 +24,7 @@ namespace _025_Manip_InOut
                     while((line = reader.ReadLine()) != null)
                     {
                         // modify case of header line
-                        if(line.IndexOf("Id") != -1)
+                        if(line.IndexOf("id") != -1)
                         {
                             line = line.ToUpper();
                         }
