@@ -29,9 +29,22 @@ namespace _025_Manip_InOut
                             line = line.ToUpper();
                         }
 
-                        // display the rest of the contents
+                        // adding display content to read file
+                        if(line.Contains("Software Engineer") || line.Contains("IT Manager"))
+                        {
+                            line += " - Team Leader";
+                        }
+
+                        if(line.Contains("Karla Brynes"))
+                        {
+                            line += " - Internal Legal Counsel";
+                        }
+
+
+                        // display the contents
                         string[] lineSub = line.Split(',');
-                        line = String.Format("{0,-5}{1,-30}{2,-20}", lineSub[0], lineSub[1], lineSub[2]);
+
+                        line = String.Format("{0,-5}{1,-30}{2,-20}", lineSub[0], lineSub[1], lineSub[2]);  // index start positions are character widths as negative numbers
                         Console.WriteLine(line);
                     }
                 }
