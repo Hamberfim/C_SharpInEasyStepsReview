@@ -2,13 +2,13 @@
 
 namespace _027_EncapData
 {
-    /*
-             * Grouping together the data structure and functionality in the class member is Encapsulation 
-             * A class is a data structure that can contain both variables and methods.
-             * Access to class members is controlled an ACCESS SPECIFIER in the class declaration. 
+            /*
+             * A class is a data structure that can contains both variables and methods.
+             * Grouping together the data structure and functionality in the classes members is Encapsulation 
+             * Access to class members is controlled by an ACCESS SPECIFIER in the class declaration. 
              * Usually, access is denied to variables but allow to the methods that can then store and retrieve data from those variable members.
              * 
-             * A class that is not declared as STATIC can be used to create INSTANCES that are assigned to a variable and the used by other classes
+             * A class that is not declared as STATIC can be used to create INSTANCES that are assigned to a variable and then used by other classes
              * 
              * A class declaration has:
              *      a class ACCESS SPECIFIER | public, private, protected, internal 
@@ -27,63 +27,6 @@ namespace _027_EncapData
              *              statements
              *          }
              *      }
-             *      
-             *      EXAMPLE:
-             *      
-             *      // access-specifier class ClassName   -- note not STATIC
-             *      public class Cat 
-             *      {
-             *          // creating the data structure of the Cat class
-             *          // member variables -- access denied
-             *          // access-specifier data-type variable-name;
-             *          private string catName;
-             *          private int catAge;
-             *          private string catColor;
-             *          
-             *          // member method ... if any
-             *          
-             *          // Setter and Getter methods  -- access allowed
-             *          public void setName(string name)
-             *          {
-             *              name = name;
-             *          }
-             *          
-             *          public string getName ()
-             *          {
-             *              return catName;
-             *          }
-             *          
-             *          public void setAge(string age)
-             *          {
-             *              age = age;
-             *          }
-             *          
-             *          public string getAge ()
-             *          {
-             *              return catAge;
-             *          }
-             *          
-             *          public void setColor (string color)
-             *          {
-             *              color = color;
-             *          }
-             *          
-             *          public string getcolor ()
-             *          {
-             *              return catColor;
-             *          }
-             *          
-             *          // other methods
-             *          public string meow () 
-             *          {
-             *              return "\nMeow!, Meow!";
-             *          }
-             *          
-             *      }
-             *      
-             *      // create an instance of the Cat class
-             *      Cat fefe = new Cat();
-             *      
              *      
              */
 
@@ -129,6 +72,59 @@ namespace _027_EncapData
                 return "\nMeow! Meow!\n";
             }
 
+        }
+
+        public class Dog
+        {
+            private string name, color;
+            private int age;
+
+            // methods
+            // a constructor (with defaults) to initialize class members instead of calling a setValues setter method
+            public Dog(string name = "Roy", int age = 1, string color = "brown")
+            {
+                this.name = name;
+                this.age = age;
+                this.color = color;
+            }
+
+            // setter methods
+            public void setName(string name)
+            {
+                this.name = name;
+            }
+
+            public void setAge(int age)
+            {
+                this.age = age;
+            }
+
+            public void setColor(string color)
+            {
+                this.color = color;
+            }
+
+            // getter methods
+            public string getName()
+            {
+                return name;
+            }
+
+            public int getAge()
+            {
+                return age;
+            }
+
+            public string getColor()
+            {
+                return color;
+            }
+
+            // other methods
+            public string bark()
+            {
+                return "\nBark, bark...bark!\n";
+            }
 
         }
 
@@ -166,6 +162,21 @@ namespace _027_EncapData
             Console.WriteLine($"{lady.getName()} is a {lady.getAge()} year-old {lady.getColor()} cat." + lady.meow());
 
             Console.WriteLine();  // spaced in output
+
+            // initializes Dog class using contructor with its default values
+            Dog roy = new Dog();
+            // retrieve all the properties of the new instance of the object with its default values  -- ouput with a method call
+            Console.WriteLine($"{roy.getName()} is a {roy.getColor()}, {roy.getAge()} year-old dog." + roy.bark());
+
+            Console.WriteLine();  // spaced in output
+
+            // initializes Dog class and set its property values
+            Dog sukha = new Dog();
+            sukha.setName("Sukha");
+            sukha.setAge(1);
+            sukha.setColor("light red tricolor");
+            // retrieve all the properties of the new instance of the object with its set values  -- ouput with a method call
+            Console.WriteLine($"{sukha.getName()} is a {sukha.getColor()}, {sukha.getAge()} year-old dog." + sukha.bark());
 
         }
     }
