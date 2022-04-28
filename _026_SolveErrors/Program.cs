@@ -8,11 +8,11 @@ namespace _026_SolveErrors
         {
             Console.Title = "Solve Errors";
 
+            // complile-time error -- invalid cast
             bool flag = true;
             /* IConvertible converted = flag;
             char letter = converted.ToChar(null); */
 
-            // complile-time error
             try
             {
                 IConvertible converted = flag;
@@ -24,9 +24,22 @@ namespace _026_SolveErrors
                 Console.WriteLine($"{error.GetType()} {error.Message}");
             }
 
-            // runtime error
+            // runtime error -- overflow exception
+            try
+            {
+                Console.WriteLine("Enter a number: ");  // using 123456
+                double num1 = Convert.ToInt16(Console.ReadLine());
 
+                Console.WriteLine("Enter another number: ");
+                double num2 = Convert.ToInt16(Console.ReadLine());
 
+                Console.WriteLine($"Total is: {num1 + num2}");
+
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine($"{error.GetType()} {error.Message} | Maximum input is: {Int16.MaxValue}");
+            }
 
             Console.WriteLine();  // space in output
         }
