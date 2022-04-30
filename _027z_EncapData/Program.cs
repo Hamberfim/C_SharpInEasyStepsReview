@@ -97,6 +97,12 @@ namespace SomeObjects
             Employee lindaBeltcher = new Employee(02, "Linda", "Beltcher", "Mother-Waitress", "Bob's Burgers");
             Console.WriteLine($"Employee: {lindaBeltcher.GetEmpId()}, {lindaBeltcher.GetFName()} {lindaBeltcher.GetLName()}, {lindaBeltcher.GetTitle()} at {lindaBeltcher.GetEmpDepart()}");
 
+            Console.WriteLine();  // space in output
+            
+            // create another object
+            Employee catman =  new Employee(03, "Mr. Kittle", "Purrs", "resident", "alley");
+            Console.WriteLine($"{catman.GetFName()} {catman.GetLName()}, who is our {catman.GetTitle()} {catman.GetEmpDepart()} cat.");
+
         }
     }
 }
