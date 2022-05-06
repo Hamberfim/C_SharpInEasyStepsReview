@@ -6,13 +6,13 @@ namespace _029_BaseConstructors
     {
         public Parent()
         {
-            Console.WriteLine("Parent Called");
+            Console.WriteLine("\tParent Called\n");
         }
 
         // overloaded constructor method
         public Parent(int num)
         {
-            Console.WriteLine($"Parent+ Called {num}");
+            Console.WriteLine($"\tParent+ Called {num}\n");
         }
     }
 
@@ -21,6 +21,11 @@ namespace _029_BaseConstructors
         public Daughter()
         {
             Console.WriteLine("\tDaughter Called\n");
+        }
+
+        public Daughter(int num)
+        {
+            Console.WriteLine($"\tDaughter+ Called {num}\n");
         }
 
     }
@@ -36,7 +41,7 @@ namespace _029_BaseConstructors
         // overloaded constructor method
         public Son(int num) : base(num)
         {
-            Console.WriteLine($"\tSon+ Called {num}");
+            Console.WriteLine($"\tSon+ Called {num}\n");
         }
     }
 
@@ -45,7 +50,16 @@ namespace _029_BaseConstructors
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Parent mom = new Parent();
+            Parent dad = new Parent(2);
+
+            Daughter lillie = new Daughter();
+            Daughter natalie = new Daughter(2);
+
+            Son tony = new Son();
+            Son andrew = new Son(10);
+
+            Console.WriteLine();  // space in output
         }
     }
 }
